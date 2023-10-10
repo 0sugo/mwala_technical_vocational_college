@@ -6,7 +6,7 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-q
+
   return (
     <main className="sticky top-0 backdrop-blur">
       <div className="text-black">
