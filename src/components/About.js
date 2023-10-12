@@ -12,16 +12,20 @@ const About = () => {
         all syllabus as required by the curriculum as an intergral part of
         training.
       </p>
-      <div>
-        <img src={guarantee} alt='guarantee' className='w-20'/>
+
+      <div className='flex items-center'>
+        <img src={guarantee} alt='guarantee' className='w-20 mr-3'/>
+        <p>Guarantee attachment and insuarance cover</p>
       </div>
 
-      <div>
-        <img src={project_work} alt='project_work' className='w-20'/>
+      <div className='flex items-center'>
+        <img src={project_work} alt='project_work' className='w-20 mr-3'/>
+        <p>Sufficient practical work</p>
       </div>
 
-      <div>
-        <img src={syllabus} alt='syllabus' className='w-20'/>
+      <div className='flex items-center'>
+        <img src={syllabus} alt='syllabus' className='w-20 mr-3'/>
+        <p>Full syllabus coverage</p>
       </div>
     </div>
   )
