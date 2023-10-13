@@ -9,4 +9,3 @@ const Events = () => {
 }
 
 export default Events
-q
