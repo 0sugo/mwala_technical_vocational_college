@@ -2,7 +2,9 @@ import React from 'react'
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <div>
+      <h1>College events</h1>
+    </div>
   )
 }
 
