@@ -4,6 +4,7 @@ import Top from "./components/Top";
 import Hero from "./components/Hero";
 import FindCourse from "./components/FindCourse";
 import About from "./components/About";
+import Events from "./components/Events";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <FindCourse />
       <About />
+      <Events />
     </div>
   );
 }
