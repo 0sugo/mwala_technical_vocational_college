@@ -6,7 +6,6 @@ import FindCourse from "./components/FindCourse";
 import About from "./components/About";
 import Events from "./components/Events";
 import Departments from "./components/Departments";
-import QuickLinks from "./components/QuickLinks";
 import Footer from "./components/Footer";
 
 function App() {
