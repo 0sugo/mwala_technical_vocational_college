@@ -5,7 +5,7 @@ import syllabus from './images/syllabus.svg';
 
 const FindCourse = () => {
   return (
-    <div>
+    <div className=''>
       <h1>Study at Mwala</h1>
       <p>
         The Mwala Technical and Vocational College(MTVC) offers quality
@@ -37,14 +37,14 @@ const FindCourse = () => {
 
       <div className="">
         <h3>Find a course for you...</h3>
-      <form className="">
+      <form className="bg-[#891110] p-4" >
 
         <div className="mb-4">
           <label className="" htmlFor="email">
             email
           </label>
           <input
-            className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+            className="block appearance-none w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
             id="email"
             type="text"
             placeholder="Enter your email"
@@ -52,11 +52,11 @@ const FindCourse = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="studyLevel">
+          <label className="block text-white-700 text-sm font-bold mb-2" htmlFor="studyLevel">
             Level of study
           </label>
           <select
-            className="block w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+            className="block w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
             id="studyLevel"
           >
             <option>Certificate</option>
@@ -65,11 +65,11 @@ const FindCourse = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="course">
+          <label className="block text-sm font-bold mb-2" htmlFor="course">
             Course
           </label>
           <select
-            className="block w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+            className="block w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
             id="course"
           >
             <option>1</option>
@@ -79,9 +79,9 @@ const FindCourse = () => {
           </select>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-white hover:bg-[#e0e0e0] text-[#891110] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
           >
             Enquire
