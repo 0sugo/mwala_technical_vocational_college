@@ -32,3 +32,8 @@ body {
 ion-icon {
   color: #6B2D30;
 }
+
+#email::placeholder {
+  color: #891110;
+}
+
