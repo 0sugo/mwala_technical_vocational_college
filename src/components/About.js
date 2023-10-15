@@ -5,7 +5,13 @@ import about2 from './images/about2.jpg'
 const About = () => {
   return (
     <div>
-      <h1 className='text-center my-4'>A bit about us</h1>
+
+      <div className='flex flex-col mb-2'>
+  <h2 className='overflow-hidden mt-16 pb-2 relative'>
+  About us
+    <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
+  </h2>
+</div>
 
       <div className='flex flex-col-reverse'>
         <div className='flex justify-end'>
