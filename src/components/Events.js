@@ -5,7 +5,12 @@ import principal from './images/principal.jpeg'
 const Events = () => {
   return (
     <div>
-      <h1 className='text-center my-4'>College events</h1>
+      <div className='flex flex-col mb-2'>
+  <h2 className='overflow-hidden mt-16 pb-2 relative'>
+  College events
+    <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
+  </h2>
+</div>
       <div className='flex flex-col-reverse items-center'>
         <div className='flex justify-center'>
         <img src={adm} alt='Admission'/>
