@@ -3,7 +3,12 @@ import React from 'react'
 const QuickLinks = () => {
   return (
     <div>
-      <h1>QuickLinks</h1>
+      <div className='flex flex-col mb-2'>
+  <h2 className='overflow-hidden mt-16 pb-2 relative'>
+  Quick links
+    <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
+  </h2>
+</div>
       <div className='flex flex-wrap'>
       <div className='bg-red-200 flex flex-col'>
         <a href='/'>Student portal</a>
