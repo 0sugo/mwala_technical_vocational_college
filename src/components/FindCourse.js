@@ -6,7 +6,13 @@ import syllabus from './images/syllabus.svg';
 const FindCourse = () => {
   return (
     <div className=''>
-      <h1>Study at Mwala</h1>
+      <div className='flex flex-col mb-2'>
+  <h2 className='overflow-hidden mt-16 pb-2 relative'>
+    Study at Mwala
+    <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
+  </h2>
+</div>
+
       <p>
         The Mwala Technical and Vocational College(MTVC) offers quality
         education in various courses together with industrial attachment in
@@ -14,30 +20,30 @@ const FindCourse = () => {
         training.
       </p>
 
-      <div className='flex items-center'>
-        <img src={guarantee} alt='guarantee' className='w-20 mr-3'/>
+      <div className='flex items-center my-4'>
+        <img src={guarantee} alt='guarantee' className='w-16 mr-3'/>
         <p>Guarantee attachment and insuarance cover</p>
       </div>
 
-      <hr className='w-full my-2 text-black'/>
+      <hr className='w-full my-2 border-black'/>
 
       <div className='flex items-center'>
-        <img src={project_work} alt='project_work' className='w-20 mr-3'/>
+        <img src={project_work} alt='project_work' className='w-16 mr-3'/>
         <p>Sufficient practical work</p>
       </div>
 
-      <hr className='w-full my-2 text-black'/>
+      <hr className='w-full my-2  border-black'/>
 
       <div className='flex items-center'>
-        <img src={syllabus} alt='syllabus' className='w-20 mr-3'/>
+        <img src={syllabus} alt='syllabus' className='w-16 mr-3'/>
         <p>Full syllabus coverage</p>
       </div>
 
-      <hr className='w-full my-2 text-black'/>
+      <hr className='w-full my-2 border-black'/>
 
-      <div className="">
-        <h3>Find a course for you...</h3>
-      <form className="bg-[#891110] p-4" >
+      <div className="bg-[#891110] p-4 mt-4">
+        <p className='text-center font-bold'>Find a course for you...</p>
+      <form className="" >
 
         <div className="mb-4">
           <label className="" htmlFor="email">
