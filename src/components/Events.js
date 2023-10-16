@@ -4,7 +4,7 @@ import principal from './images/principal.jpeg'
 
 const Events = () => {
   return (
-    <div>
+    <div className='mx-4'>
       <div className='flex flex-col mb-2'>
   <h2 className='overflow-hidden mt-16 pb-2 relative'>
   College events
@@ -22,7 +22,10 @@ const Events = () => {
               admission.
           </p>
           <div className='flex justify-center my-4'>
-        <button type='button' className='bg-[#891110] p-2 rounded-lg'>Learn more</button>
+        <button type='button' className='bg-[#891110] p-2 rounded-lg hover:bg-[#06294D] text-white py-3 px-8 shadow-md hover:shadow-2xl transition duration-500'>
+          Learn more
+          <span><ion-icon name="arrow-redo-outline" className='text-white'></ion-icon></span>
+          </button>
         </div>
         </div>
       </div>
@@ -36,8 +39,11 @@ const Events = () => {
           <p>Admission is currently on going, all applicants are required to apply
   before the dealine and have all the neccessities required before
   admission.</p>
-        <div className='flex justify-center my-4'>
-        <button type='button' className='bg-[#891110] p-2 rounded-lg'>Learn more</button>
+  <div className='flex justify-center my-4'>
+        <button type='button' className='bg-[#891110] p-2 rounded-lg hover:bg-[#06294D] text-white py-3 px-8 shadow-md hover:shadow-2xl transition duration-500'>
+          Learn more
+          <span><ion-icon name="arrow-redo-outline" className='text-white'></ion-icon></span>
+          </button>
         </div>
 
         </div>
