@@ -5,7 +5,7 @@ import syllabus from './images/syllabus.svg';
 
 const FindCourse = () => {
   return (
-    <div className=''>
+    <div className='mx-4'>
       <div className='flex flex-col mb-2'>
   <h2 className='overflow-hidden mt-16 pb-2 relative'>
     Study at Mwala
@@ -41,13 +41,13 @@ const FindCourse = () => {
 
       <hr className='w-full my-2 border-black'/>
 
-      <div className="bg-[#891110] p-4 mt-4">
+      <div className="bg-[#891110] p-4 mt-4 rounded-lg">
         <p className='text-center font-bold'>Find a course for you...</p>
       <form className="" >
 
         <div className="mb-4">
           <label className="" htmlFor="email">
-            email
+            Email
           </label>
           <input
             className="block appearance-none w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
