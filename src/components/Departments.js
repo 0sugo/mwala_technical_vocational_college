@@ -2,7 +2,7 @@ import React from 'react'
 
 const Departments = () => {
   return (
-    <div>
+    <div className='mx-4'>
       <div className='flex flex-col mb-2'>
   <h2 className='overflow-hidden mt-16 pb-2 relative'>
   Departments
