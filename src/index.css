@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Neuton:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Judson:wght@700&family=Neuton:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +9,7 @@
 @layer base {
   h1 {
     @apply text-4xl;
+
   }
   h2 {
     @apply text-3xl;
@@ -22,14 +25,18 @@
 html {
   scroll-behavior:smooth;
 }
+
 *,
 body {
   overflow-x:hidden;
-  margin:0;
   padding:0;
   font-family: 'Poppins', sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+h1,h2,h3 {
+  font-family: 'Judson', serif;
 }
 
 body::-webkit-scrollbar {
@@ -40,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 ion-icon {
-  color: #6B2D30;
+  /* color: #6B2D30; */
 }
 
 #email::placeholder {
