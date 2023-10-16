@@ -4,9 +4,9 @@ import QuickLinks from './QuickLinks'
 
 const Footer = () => {
   return (
-    <div>
+    <div className=''>
       <QuickLinks />
-      <div className='my-4 flex flex-col-reverse'>
+      <div className='my-4 mx-4 flex flex-col-reverse gap-3 ]'>
         <div className='my-4'>
           <iframe
             title="Google Map"
@@ -51,14 +51,14 @@ const Footer = () => {
           <h3 className='text-center'>Newsletter</h3>
           <p>Keep up with our weekly news and updates on education. Enter your e-mail and subscribe to our newsletter.</p>
           <form>
-            <input placeholder='enter your email'/>
+            <input placeholder='Enter your email'/>
           </form>
         </div>
       </div>
 
-      <hr className='m-4'/>
+      <hr className='m-2'/>
 
-      <div className='text-center'>
+      <div className='text-center bg-[#06294D] text-[white] p-4'>
         <div>
           <span>Terms Of Use | </span>
           <span>Legal Notice | </span>
