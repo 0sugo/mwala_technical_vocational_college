@@ -4,7 +4,7 @@ import about2 from './images/about2.jpg'
 
 const About = () => {
   return (
-    <div>
+    <div className='mx-4'>
 
       <div className='flex flex-col mb-2'>
   <h2 className='overflow-hidden mt-16 pb-2 relative'>
