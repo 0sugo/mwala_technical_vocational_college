@@ -6,21 +6,21 @@ const Events = () => {
   return (
     <div className='mx-4'>
       <div className='flex flex-col mb-2'>
-  <h2 className='overflow-hidden mt-16 pb-2 relative'>
+  <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
   College events
     <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
   </h2>
 </div>
-      <div className='flex flex-col-reverse items-center'>
+      <div className='flex flex-col-reverse items-center mt-4'>
         <div className='flex justify-center'>
         <img src={adm} alt='Admission'/>
         </div>
         <div className='flex flex-col'>
           <h3>News on Admissions</h3>
-          <p>Admission is currently on going, all applicants are required to apply
+          <span className='font-light'>Admission is currently on going, all applicants are required to apply
               before the dealine and have all the neccessities required before
               admission.
-          </p>
+          </span>
           <div className='flex justify-center my-4'>
         <button type='button' className='bg-[#891110] p-2 rounded-lg hover:bg-[#06294D] text-white py-3 px-8 shadow-md hover:shadow-2xl transition duration-500'>
           Learn more
@@ -30,7 +30,7 @@ const Events = () => {
         </div>
       </div>
 
-      <div className='flex flex-col-reverse items-center'>
+      <div className='flex flex-col-reverse items-center mt-4'>
       <div className='flex justify-center'>
         <img src={principal} alt='Principal'/>
       </div>
