@@ -35,7 +35,10 @@ body {
   -ms-overflow-style: none;
 }
 
-h1,h2,h3 {
+p {
+  font-wight:100px;
+}
+.judson {
   font-family: 'Judson', serif;
 }
 
