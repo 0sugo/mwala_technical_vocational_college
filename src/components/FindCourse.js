@@ -125,7 +125,7 @@ const FindCourse = () => {
 
         <div className="flex items-center justify-center">
           <button
-            className="bg-[#06294D] hover:bg-[#112131] text-slate-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-[#06294D] hover:bg-[#06294D] text-slate-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
           >
             Enquire
