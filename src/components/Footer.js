@@ -14,7 +14,7 @@ const Footer = () => {
             // width="600"
             // height="450"
             frameBorder="0"
-            className='w-full'
+            className='w-full h-52'
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
@@ -48,10 +48,13 @@ const Footer = () => {
         </div>
 
         <div className='my-4'>
-          <h3 className='text-center'>Newsletter</h3>
-          <p>Keep up with our weekly news and updates on education. Enter your e-mail and subscribe to our newsletter.</p>
-          <form>
-            <input placeholder='Enter your email'/>
+          <h4 className='text-xl mb-2'>Newsletter</h4>
+          <p className='greyer'>Keep up with our weekly news and updates on education. Enter your e-mail and subscribe to our newsletter.</p>
+          <form className=" flex items-center mt-2">
+            <input type="email" placeholder="you@example.com" id="email" className=" outline-none w-2/3 p-1 border border-solid  border-[#06294D] focus:border-black"/>
+            <button className="p-1  bg-[#06294D] hover:bg-black  hover:border-black  text-white border border-solid border-[#06294D]"type="submit">
+              Sign Up!
+            </button>
           </form>
         </div>
       </div>
@@ -59,13 +62,13 @@ const Footer = () => {
       <hr className='m-2'/>
 
       <div className='text-center bg-[#06294D] text-[white] p-4'>
-        <div>
+        <div className='text-xs'>
           <span>Terms Of Use | </span>
           <span>Legal Notice | </span>
           <span>Website feedback</span>
         </div>
 
-        <div>
+        <div className='text-xs'>
           <span>2023 Mwala Technical & Vocation College. All Rights Reserved</span>
         </div>
 
