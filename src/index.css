@@ -35,12 +35,31 @@ body {
   -ms-overflow-style: none;
 }
 
+svg {
+  color:
+}
 p {
   font-wight:100px;
 }
 .judson {
   font-family: 'Judson', serif;
 }
+
+.greyer {
+  color:#5a5a5a;
+}
+
+.marooner {
+  color:#6B2D30;
+}
+
+.bluer {
+  color:#06294D;
+}
+#whiter{
+  color:#ffffff;
+}
+
 
 body::-webkit-scrollbar {
   width: 0.5em;
