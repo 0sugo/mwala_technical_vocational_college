@@ -13,7 +13,7 @@ const FindCourse = () => {
   </p>
 </div>
 
-      <p className=''>
+      <p className='greyer'>
         The Mwala Technical and Vocational College(MTVC) offers quality
         education in various courses together with industrial attachment in
         all syllabus as required by the curriculum as an intergral part of
