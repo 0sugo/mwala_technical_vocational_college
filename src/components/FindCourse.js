@@ -78,7 +78,7 @@ const FindCourse = () => {
       <form className="" >
 
         <div className="mb-4">
-          <label className="" htmlFor="email">
+          <label className="text-slate-100" htmlFor="email">
             Email
           </label>
           <input
@@ -91,7 +91,7 @@ const FindCourse = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-white-700 text-sm  mb-2" htmlFor="studyLevel">
+          <label className="block text-white-700 text-sm  mb-2 text-slate-100" htmlFor="studyLevel">
             Level of study
           </label>
           <select
@@ -105,7 +105,7 @@ const FindCourse = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm mb-2" htmlFor="course">
+          <label className="block text-sm mb-2 text-slate-100" htmlFor="course">
             Course
           </label>
           <select
