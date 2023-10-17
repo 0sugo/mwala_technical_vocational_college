@@ -74,7 +74,7 @@ const FindCourse = () => {
       <hr className='w-full my-2 border-black'/>
 
       <div className="bg-[#891110] p-4 mt-8 rounded-lg">
-        <p className='text-center font-bold'>Find a course for you...</p>
+        <p className='text-center font-bold text-slate-100'>Find a course for you...</p>
       <form className="" >
 
         <div className="mb-4">
