@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import logo from './logo.jpeg';
+import logo from './logo.jpeg';
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,11 +13,15 @@ const Nav = () => {
         <div className="container mx-auto p-4">
           <nav className="flex flex-wrap items-center justify-between lg:mx-40  py-4 md:py-0 px-4 text-lg text-gray-700">
             <div>
-              <a href="/" className="judson leading-9 tracking-wider text-3xl">MTVC</a>
-              {/* <img src={logo} alt="logo" className="sm:hidden"/> */}
+              {/* <a href="/" className="judson leading-9 tracking-wider text-3xl">MTVC</a> */}
+              <img src={logo} alt="logo" className="w-12"/>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={toggleMenu}>
+            <div>
+              <a href="/" className="judson leading-9 tracking-wider text-3xl text-[#06294D] ">MTVC</a>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" className="marooner h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor" onClick={toggleMenu}>
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
 
