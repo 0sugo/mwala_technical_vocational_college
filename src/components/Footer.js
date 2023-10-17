@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className=''>
       <QuickLinks />
-      <div className='my-4 mx-4 flex flex-col-reverse gap-3 ]'>
+      <div className='my-4 mx-4 flex flex-col gap-3 ]'>
         <div className='my-4'>
           <iframe
             title="Google Map"
@@ -25,24 +25,24 @@ const Footer = () => {
           <div >
             <a href="mailto:mwalatvc@gmail.com" className='flex items-center'>
               <ion-icon name="mail-outline"></ion-icon>
-              <span className='ml-2'>mwalatvc@gmail.com</span>
+              <span className='ml-2 greyer'>mwalatvc@gmail.com</span>
             </a>
           </div>
 
           <div className='flex items-center'>
             <ion-icon name="call-outline"></ion-icon>
-            <span className='ml-2'>0796536524 / 0722501259</span>
+            <span className='ml-2 greyer'>0796536524 / 0722501259</span>
           </div>
 
           <div className='flex items-center'>
             <ion-icon name="location-outline"></ion-icon>
-            <span className='ml-2'>P.O.BOX 07-90102,Mwala-Machakos</span>
+            <span className='ml-2 greyer'>P.O.BOX 07-90102,Mwala-Machakos</span>
           </div>
 
           <div className='flex items-center'>
             <a href='https://www.facebook.com/Mwala.technicalvocational.college' className='flex items-center'>
             <ion-icon name="logo-facebook"></ion-icon>
-            <span className='ml-2'>@Mwalatvc</span>
+            <span className='ml-2 greyer'>@Mwalatvc</span>
             </a>
           </div>
         </div>
