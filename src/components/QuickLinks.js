@@ -9,7 +9,79 @@ const QuickLinks = () => {
     <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
   </h2>
 </div>
-<div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white mt-8">
+      {/* <div className='flex flex-wrap'>
+      <div className='bg-red-200 flex flex-col'>
+        <a href='/'>Student portal</a>
+        <a href='/'>Student union</a>
+        <a href='/'>Student welfare</a>
+        <a href='/'>Alumni wall of fame</a>
+        <a href='/'>Rules and regulations</a>
+        <a href='/'>Online registration </a>
+        <a href='/'>Timetable</a>
+      </div>
+
+      <div className='bg-green-200 flex flex-col'>
+        <a className='hover:text-blue-800 hover:underline'href='/'>legal notice</a>
+        <a href='/'>Staff portal</a>
+        <a href='/'>Staff Vacancy</a>
+        <a href='/'>Sport activities</a>
+        <a href='/'>Tender's application</a>
+        <a href='/'>Environment policy</a>
+      </div>
+
+      <div className='bg-blue-200 flex flex-col'>
+        <a className='hover:text-blue-800 hover:underline'href='/'>Our intake</a>
+        <a href='/'>School timetable</a>
+        <a href='/'>Registration form</a>
+        <a href='/'>Examination rules</a>
+        <a href='/'>Admission requirement</a>
+        <a href='/'>Accessing exam cards</a>
+      </div>
+      </div> */}
+
+      <details>
+        <summary>Student Links</summary>
+        <div className='flex flex-col'>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Student portal</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Student union</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Student welfare</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Alumni wall of fame</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Rules and regulations</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Online registration </a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Timetable</a>
+        </div>
+
+      </details>
+
+      <details>
+        <summary>General school links</summary>
+        <div className='flex flex-col'>
+          <a className='hover:text-blue-800 hover:underline' href='/'>legal notice</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Staff portal</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Staff Vacancy</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Sport activities</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Tender's application</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Environment policy</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>School programme</summary>
+        <div className='flex flex-col'>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Our intake</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>School timetable</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Registration form</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Examination rules</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Admission requirement</a>
+          <a className='hover:text-blue-800 hover:underline' href='/'>Accessing exam cards</a>
+        </div>
+      </details>
+
+
+
+
+
+{/* <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
   <h1 id="accordion-color-heading-1">
     <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left  border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-[#06294D]" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
       <span className='text-lg text-black hover:text-white'>Student Links</span>
@@ -66,7 +138,7 @@ const QuickLinks = () => {
 
     </div>
   </div>
-</div>
+</div> */}
 
 
 
