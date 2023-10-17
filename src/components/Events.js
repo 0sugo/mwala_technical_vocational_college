@@ -16,11 +16,11 @@ const Events = () => {
         <img src={adm} alt='Admission'/>
         </div>
         <div className='flex flex-col'>
-          <h3>News on Admissions</h3>
-          <span className='font-light'>Admission is currently on going, all applicants are required to apply
+          <h4 className='text-xl mb-2'>News on Admissions</h4>
+          <p className='font-light greyer'>Admission is currently on going, all applicants are required to apply
               before the dealine and have all the neccessities required before
-              admission.
-          </span>
+              admission...
+          </p>
           <div className='flex justify-center my-4'>
         <button type='button' className='bg-[#891110] p-2 rounded-lg hover:bg-[#06294D] text-white py-3 px-8 shadow-md hover:shadow-2xl transition duration-500'>
           Learn more
@@ -35,10 +35,9 @@ const Events = () => {
         <img src={principal} alt='Principal'/>
       </div>
         <div className='flex flex-col'>
-          <h3>News from Principal</h3>
-          <p>Admission is currently on going, all applicants are required to apply
-  before the dealine and have all the neccessities required before
-  admission.</p>
+          <h4 className='text-xl mb-2'>News from Principal</h4>
+          <p className='text-[#5a5a5a]'> Join us in shaping a brighter future. At Mwala Technical and Vocational College, we're dedicated to
+          providing a world-class education and fostering a spirit of curiosity, innovation, and excellence...</p>
   <div className='flex justify-center my-4'>
         <button type='button' className='bg-[#891110] p-2 rounded-lg hover:bg-[#06294D] text-white py-3 px-8 shadow-md hover:shadow-2xl transition duration-500'>
           Learn more
