@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         <div className='my-4'>
-          <h4 className='text-xl mb-2'>Newsletter</h4>
+          <h4 className='text-2xl mb-2'>Newsletter</h4>
           <p className='greyer'>Keep up with our weekly news and updates on education. Enter your e-mail and subscribe to our newsletter.</p>
           <form className=" flex items-center mt-2">
             <input type="email" placeholder="you@example.com" id="email" className=" outline-none w-2/3 p-1 border border-solid  border-[#06294D] focus:border-black"/>
