@@ -74,7 +74,7 @@ const FindCourse = () => {
       <hr className='w-full my-2 border-black'/>
 
       <div className="bg-[#891110] p-4 mt-8 rounded-lg">
-        <p className='text-center font-bold text-slate-100'>Find a course for you...</p>
+        <p className='text-center font-bold'>Find a course for you...</p>
       <form className="" >
 
         <div className="mb-4">
@@ -82,7 +82,7 @@ const FindCourse = () => {
             Email
           </label>
           <input
-            className="block appearance-none w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+            className="block appearance-none w-full placeholder-green-900 bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
             id="email"
             type="text"
             placeholder="Enter your email"
@@ -125,7 +125,7 @@ const FindCourse = () => {
 
         <div className="flex items-center justify-center">
           <button
-            className="bg-white hover:bg-[#e0e0e0] text-[#891110] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-[#06294D] hover:bg-[#112131] text-slate-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
           >
             Enquire
