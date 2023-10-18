@@ -6,9 +6,10 @@ import syllabus from './images/syllabus.svg';
 const FindCourse = () => {
   const [level ,setLevel] = useState('');
 
-  const handleLevel=(e)=>{
-    setLevel('diploma');
+  const handLevelChange=(e)=>{
+    setLevel(e.target.value);
   }
+
   const diploma = ['Diploma in Electrical & Electronics Engineering (Power) Mod. 1, 2, 3',
     'Diploma in Civil Engineering - Module 1, 2 and 3',
     'Diploma in Building Technology – Module 1, 2 and 3',
@@ -21,7 +22,6 @@ const FindCourse = () => {
     'Diploma in Analytical Chemistry – Module 1, 2 and 3',
     'Diploma in Medical Engineering - Module 1, 2 and 3',
     'Diploma in Mechanical Engineering – Module 1, 2 and 3',
-    'Diploma in Welding and Fabrication – Module 1, 2 and 3',
     'Diploma in Petroleum and Geoscience – Module 1, 2 and 3.',
     'Diploma in Information Comm. Tech - Module 1, 2 and 3',
     'Diploma in Computer Science – Module 1, 2 and 3',
@@ -33,8 +33,33 @@ const FindCourse = () => {
     'Diploma in Child Care Protection Module 1, 2 and 3',
     'Diploma in Tourism Management – Module 1, 2 and 3',
     'Diploma in Banking and Finance – Module 1, 2 and 3',
+    'Accounting Technician Diploma Level 1',
+    'Accounting Technician Diploma Level 2',
+    'Accounting Technician Diploma Level',
     'Diploma in Accounting and Finance – Module 1, 2 and 3'];
-    const certificate = [];
+    const certificate = [
+      'Craft Certificate in Electrical Technology (Power) – Mod 1, 2',
+      'Craft Certificate in Building Technology – Module 1, 2',
+      'Certificate in Automotive Engineering- Module 1, 2',
+      'Craft certificates in welding and fabrication- Module 1, 2',
+      'Craft Certificate in Food & Beverage – Module 1, 2',
+      'Certificate in Fashion Design & Garment Making-Mod 1, 2',
+      'Certificate in Catering & Accommodation Operations- Module 1, 2',
+      'Craft Certificate in Science Laboratory Technology',
+      'Craft Certificate in Masonry',
+      'Craft Certificate in Plumbing',
+      'Craft Certificate in Agriculture',
+      'Certificate in Human Resource Management – Module 1, 2',
+      'Certificate in Supply Chain Management – Module 1, 2',
+      'Certificate in Information Studies - Module 1, 2',
+      'Certificate in Social Work Development. – Module 1, 2',
+      'Certificate in Project Management – Module 1, 2',
+      'Certificate in Secretarial Studies- Module 1, 2',
+      'Certificate in Child Care Protection Module 1, 2',
+      'Certificate in Accounting Management Skill (CAM) Level I',
+      'Certified Public Accounts- Foundation',
+      'Certified Public Accounts- Intermediate',
+      'Certified Public Accounts-Final'];
 
   return (
     <div className='mx-4'>
@@ -97,8 +122,9 @@ const FindCourse = () => {
           <select
             className="block w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
             id="studyLevel"
-            onClick={handleLevel}
+            onChange={handLevelChange}
           >
+            <option disabled selected>Select level of study...</option>
             <option>Certificate</option>
             <option>Diploma</option>
           </select>
@@ -112,12 +138,12 @@ const FindCourse = () => {
   className="block w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
   id="course"
 >
-  {level === 'diploma' ? (
+  {level === 'Diploma' ? (
     diploma.map((dip) => <option key={dip}>{dip}</option>)
-  ) : level === 'certificate' ? (
+  ) : level === 'Certificate' ? (
     certificate.map((cert) => <option key={cert}>{cert}</option>)
   ) : (
-    <option>Choose a level of study first . . .</option>
+    <option className='text-[#cccccc]'>Choose a level of study first . . .</option>
   )}
 </select>
 
