@@ -40,7 +40,7 @@ const QuickLinks = () => {
       </div> */}
 
       <details>
-        <summary>Student Links</summary>
+        <summary className='greyer cursor-pointer'>Student Links</summary>
         <div className='flex flex-col pl-8 text-[#6B2D30]'>
           <a className='hover:text-blue-800 hover:underline' href='/'>Student portal</a>
           <a className='hover:text-blue-800 hover:underline' href='/'>Student union</a>
@@ -54,7 +54,7 @@ const QuickLinks = () => {
       </details>
 
       <details>
-        <summary>General school links</summary>
+        <summary className='greyer cursor-pointer'>General school links</summary>
         <div className='flex flex-col pl-8 text-[#6B2D30]'>
           <a className='hover:text-blue-800 hover:underline' href='/'>legal notice</a>
           <a className='hover:text-blue-800 hover:underline' href='/'>Staff portal</a>
@@ -66,7 +66,7 @@ const QuickLinks = () => {
       </details>
 
       <details>
-        <summary>School programme</summary>
+        <summary className='greyer cursor-pointer'>School programme</summary>
         <div className='flex flex-col pl-8 text-[#6B2D30]'>
           <a className='hover:text-blue-800 hover:underline' href='/'>Our intake</a>
           <a className='hover:text-blue-800 hover:underline' href='/'>School timetable</a>
