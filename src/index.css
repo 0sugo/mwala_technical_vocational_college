@@ -68,9 +68,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
-ion-icon {
-  /* color: #6B2D30; */
-}
 
 #email::placeholder {
   color: #cccccc;
