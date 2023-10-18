@@ -14,7 +14,7 @@ const About = () => {
 </div>
 
       <div className='flex flex-col-reverse'>
-        <div className='flex justify-end my-3'>
+        <div className='flex justify-center my-3'>
           <img src={about1} alt='about pic' className='rounded-lg'/>
         </div>
 
@@ -26,7 +26,7 @@ const About = () => {
       </div>
 
       <div className='flex  flex-col-reverse my-4'>
-        <div className='flex justify-start my-3'>
+        <div className='flex justify-center my-3'>
           <img src={about2} alt='about pic' className='rounded-lg' />
         </div>
         <p className='text-[#5a5a5a]'>We also provide other social ammenities and student
