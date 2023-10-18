@@ -75,4 +75,7 @@ ion-icon {
 #email::placeholder {
   color: #cccccc;
 }
+#studyLevel::placeholder {
+  color: #cccccc;
+}
 
