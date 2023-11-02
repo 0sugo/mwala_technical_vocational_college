@@ -4,7 +4,7 @@ import principal from './images/principal.jpeg'
 
 const Events = () => {
   return (
-    <div className='mx-4'>
+    <div className='mx-4' id='events'>
       <div className='flex flex-col mb-2'>
   <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
   College events
