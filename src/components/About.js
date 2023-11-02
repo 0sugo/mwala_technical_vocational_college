@@ -4,7 +4,7 @@ import about2 from './images/about2.jpg'
 
 const About = () => {
   return (
-    <div className='mx-4'>
+    <div className='mx-4' id='about'>
 
       <div className='flex flex-col mb-4'>
   <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
