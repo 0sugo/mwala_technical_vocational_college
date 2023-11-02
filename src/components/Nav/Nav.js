@@ -20,7 +20,7 @@ const Nav = () => {
   };
 
   return (
-    <main className="sticky top-0 backdrop-blur">
+    <main className={`sticky top-0 backdrop-blur z-10 ${isMenuOpen ? 'h-screen' : ''}`}>
       <div className="text-black">
         <div className="container mx-auto p-4">
           <nav className="flex flex-wrap items-center justify-between lg:mx-40 py-4 md:py-0 px-4 text-lg text-gray-700">
@@ -36,13 +36,17 @@ const Nav = () => {
               <FaBars className="marooner h-6 w-6" />
             </div>
 
-            <div className={`w-full md:flex md:items-center bg-blur md:w-auto ${isMenuOpen ? "block" : "hidden"}`}>
+            <div className={`w-full md:flex md:items-center bg-blur md:w-auto bg-slate-50 ${isMenuOpen ? "block" : "hidden"}`}>
               <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 items-center">
                 <li className="hover:border-[#6B2D30]">
                   <a className="px-3 py-2 block hover:border-[#6B2D30]" href="/">Home</a>
                 </li>
                 <li>
                   <a className="px-3 py-2 block" href="#about">About</a>
+                </li>
+
+                <li>
+                  <a className="px-3 py-2 block" href="#events">College events</a>
                 </li>
 
                 <li className="relative group">
@@ -87,8 +91,9 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
+
                 <li>
-                  <a className="px-3 py-2 block" href="#contact">Contact Us</a>
+                  <a className="px-3 py-2 block" href="#quick">Quick links</a>
                 </li>
               </ul>
             </div>
