@@ -99,13 +99,13 @@ const Departments = () => {
               <ul class="slider-container service-list" data-slider-container>
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="desktop-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">Deputy Principal</h3>
+                    <h3 class="h3 card-title text-center">Deputy Principal</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-justify">
                     The Office is responsible for assisting the principal in day-to-day management of the
                     institution including the planning and overseeing the daily timetable of the classes...
                     </p>
@@ -122,13 +122,13 @@ const Departments = () => {
 
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="code-working-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">Dean of Students</h3>
+                    <h3 class="h3 card-title text-center">Dean of Students</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-justify">
                     The office of the dean of students is concerned with the welfare of students from the
                     time they enroll in the college to the time they exit.It is entrusted with the
                     responsibility of enhancing the growth of...
@@ -146,13 +146,13 @@ const Departments = () => {
 
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="code-working-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">Exam department</h3>
+                    <h3 class="h3 card-title text-center">Exam Department</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-justify">
                       The department administers internal and external examinations which help in measuring the
                       performance of the learners admitted to the institution. The department deals with various clients
                       and which include educators, Examination Bodies...
@@ -170,13 +170,13 @@ const Departments = () => {
 
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="push-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">Finance Department</h3>
+                    <h3 class="h3 card-title text-center">Finance Department</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-justify">
                     Finance department in Mwala Technical and Vocational College forms part of the integral
                      management team. The department play critical role in...
                     </p>
@@ -193,13 +193,13 @@ const Departments = () => {
 
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="color-filter-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title"> Quality Assurance</h3>
+                    <h3 class="h3 card-title text-center"> Quality Assurance</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-justify">
                     Quality Assurance (QA) and enhancement are core aspects of the life of tertiary education
                     institutions. The key element of QA and enhancement in most higher education systems is
                     the improvement of the student experience...
@@ -217,13 +217,13 @@ const Departments = () => {
 
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="color-filter-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title"> Industrial Liason Department</h3>
+                    <h3 class="h3 card-title text-center"> Industrial Liason Department</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-justify">
                     In Mwala Tecnical and Vocationsal College(MTVC) industrial attachment is an integral part of Training as
                     spelt out in the curriculum developers Education syllabus for all courses.The liason office coordinates
                     the attachment in different companies and...
@@ -241,13 +241,13 @@ const Departments = () => {
 
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="chatbubbles-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">Applied sciences & agriculture</h3>
+                    <h3 class="h3 card-title text-center">Applied sciences & Agriculture</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-center">
                     Department of agriculture and applied science is one of the premier departments at Mwala
                     Technical and Vocational College. The department offers competitive agricultural and
                     applied science based courses that are tailor-made to...
@@ -265,13 +265,13 @@ const Departments = () => {
 
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
-                    <div class="card-icon">
+                    <div class="card-icon flex justify-center">
                       <ion-icon name="megaphone-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">Performance Contracting</h3>
+                    <h3 class="h3 card-title text-center">Performance Contracting</h3>
 
-                    <p class="card-text">
+                    <p class="card-text text-justify">
                     Performance Contracting is a management tool used to track the accountability of publicly
                     funded government Ministries, Departments and Agencies (MDAs).It is a freely negotiated
                     performance agreement between the National government and the respective...
