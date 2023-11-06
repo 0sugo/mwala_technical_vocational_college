@@ -2,7 +2,7 @@ import React from 'react'
 
 const QuickLinks = () => {
   return (
-    <div className='mx-4' id='quick'>
+    <div className='mx-4 pt-14' id='quick'>
       <div className='flex flex-col mb-2'>
   <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
   Quick links
