@@ -12,6 +12,7 @@ import PerformanceContracting from "./components/PerformanceContracting";
 import DeanStudents from "./components/DeanStudents";
 import DeputyPrincipal from "./components/DeputyPrincipal";
 import Principal from "./components/Principal";
+import ElectricityDepartment from "./components/ElectricityDepartment";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Exam-Department" element={<ExamDepartment/>} />
         <Route path="/Finance-Department" element={<FinanceDepartment />} />
         <Route path="/Quality-Assuarance" element={<QualityAssuarance/>} />
+        <Route path="/Electricity&Electronic-Department" element={<ElectricityDepartment/>} />
       </Routes>
     </div>
   );
