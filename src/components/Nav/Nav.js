@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from './logo.png';
 import { FaAngleDown, FaBars } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,24 +40,29 @@ const Nav = () => {
             <div className={`w-full md:flex md:items-center bg-blur md:w-auto bg-slate-50 ${isMenuOpen ? "block" : "hidden"}`}>
               <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 items-center">
                 <li className="hover:border-[#6B2D30]">
-                  <a className="px-3 py-2 block hover:border-[#6B2D30]" href="/">Home</a>
+                  <a className="px-3 py-2 block hover:border-[#6B2D30]" href="/" onClick={() => setIsMenuOpen(false)}>Home</a>
                 </li>
                 <li>
-                  <a className="px-3 py-2 block" href="#about">About</a>
+                  <a className="px-3 py-2 block" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
                 </li>
 
                 <li>
-                  <a className="px-3 py-2 block" href="#events">College events</a>
+                  <a className="px-3 py-2 block" href="#events" onClick={() => setIsMenuOpen(false)}>College events</a>
                 </li>
 
                 <li className="relative group">
+
                   <a className="px-3 py-2 block flex items-center gap-1" href="#academics" onClick={toggleAcademics}>
                     Academics <FaAngleDown className={`icon ${isAcademicsOpen ? 'rotate-180' : ''}`} />
                   </a>
                   <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 border border-gray-300 ${isAcademicsOpen ? 'block' : 'hidden'}`}>
                     <li>
-                      <a href="#academic1">Applied sciences</a>
+                    <NavLink to="/applied-sciences" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Applied Sciences
+                    </NavLink>
+
                     </li>
+
                     <li>
                       <a href="#academic2">Industrial Attachment</a>
                     </li>
@@ -93,7 +99,7 @@ const Nav = () => {
                 </li>
 
                 <li>
-                  <a className="px-3 py-2 block" href="#quick">Quick links</a>
+                  <a className="px-3 py-2 block" href="#quick" onClick={() => setIsMenuOpen(false)}>Quick links</a>
                 </li>
               </ul>
             </div>
