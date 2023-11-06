@@ -77,25 +77,48 @@ const Nav = () => {
                   </a>
                   <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 border border-gray-300 ${isNonAcademicsOpen ? 'block' : 'hidden'}`}>
                     <li>
-                      <a href="#principal">Principal</a>
+                      <NavLink to="/Principal" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Principal
+                      </NavLink>
                     </li>
                     <li>
+                      <NavLink to="/Deputy-Principal" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Deputy Principal
+                      </NavLink>
                       <a href="#deputy-principal">Deputy Principal</a>
                     </li>
                     <li>
+                      <NavLink to="/Dean-of-Students" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Dean of Students
+                      </NavLink>
                       <a href="#dean-of-students">Dean of Students</a>
                     </li>
                     <li>
-                      <a href="#performance-contracting">Performance Contracting</a>
+                      <NavLink to="/Performance-Contracting" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Performance Contracting
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#exam-department">Exam Department</a>
+                      <NavLink to="/Exam-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Exam Department
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#finance-department">Finance Department</a>
+                      <NavLink to="/Finance-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Finance Department
+                      </NavLink>
                     </li>
+
                     <li>
-                      <a href="#quality-assurance">Quality Assurance</a>
+                      <NavLink to="/Quality-Assuarance" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Quality Assurance
+                      </NavLink>
+                    </li>
+
+                    <li>
+                      <NavLink to="/Electricity&Electronic-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Electricity&Electronics Department
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
