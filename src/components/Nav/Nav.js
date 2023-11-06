@@ -64,7 +64,9 @@ const Nav = () => {
                     </li>
 
                     <li>
-                      <a href="#academic2">Industrial Attachment</a>
+                    <NavLink to="/Industrial-Attachment" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    Industrial Attachment
+                    </NavLink>
                     </li>
                   </ul>
                 </li>
