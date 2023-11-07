@@ -48,4 +48,3 @@ const FinanceDepartment = () => {
 }
 
 export default FinanceDepartment
-j
