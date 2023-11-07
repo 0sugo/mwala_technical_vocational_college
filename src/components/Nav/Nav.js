@@ -85,13 +85,11 @@ const Nav = () => {
                       <NavLink to="/Deputy-Principal" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
                       Deputy Principal
                       </NavLink>
-                      <a href="#deputy-principal">Deputy Principal</a>
                     </li>
                     <li>
                       <NavLink to="/Dean-of-Students" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
                       Dean of Students
                       </NavLink>
-                      <a href="#dean-of-students">Dean of Students</a>
                     </li>
                     <li>
                       <NavLink to="/Performance-Contracting" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
