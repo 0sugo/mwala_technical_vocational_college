@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from './logo.png';
 import { FaAngleDown, FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -7,6 +7,7 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAcademicsOpen, setIsAcademicsOpen] = useState(false);
   const [isNonAcademicsOpen, setIsNonAcademicsOpen] = useState(false);
+  const navRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -20,8 +21,27 @@ const Nav = () => {
     setIsNonAcademicsOpen(!isNonAcademicsOpen);
   };
 
+  useEffect(() => {
+    // Add an event listener to handle clicks on the document body
+    function handleOutsideClick(event) {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+        setIsAcademicsOpen(false);
+        setIsNonAcademicsOpen(false);
+      }
+    }
+
+    // Attach the event listener when the component mounts
+    document.addEventListener("click", handleOutsideClick);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
   return (
-    <main className={`sticky top-0 backdrop-blur z-10 ${isMenuOpen ? 'h-screen' : ''}`}>
+    <main className={`sticky top-0 backdrop-blur z-10 overflow-y-scroll ${isMenuOpen ? 'h-screen' : ''}`} ref={navRef}>
       <div className="text-black">
         <div className="container mx-auto p-4">
           <nav className="flex flex-wrap items-center justify-between lg:mx-40 py-4 md:py-0 px-4 text-lg text-gray-700">
@@ -61,6 +81,12 @@ const Nav = () => {
                       Applied Sciences
                     </NavLink>
 
+                    </li>
+
+                    <li>
+                      <NavLink to="/Electricity&Electronic-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                      Electricity&Electronics Department
+                      </NavLink>
                     </li>
 
                     <li>
@@ -110,12 +136,6 @@ const Nav = () => {
                     <li>
                       <NavLink to="/Quality-Assuarance" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
                       Quality Assurance
-                      </NavLink>
-                    </li>
-
-                    <li>
-                      <NavLink to="/Electricity&Electronic-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Electricity&Electronics Department
                       </NavLink>
                     </li>
                   </ul>
