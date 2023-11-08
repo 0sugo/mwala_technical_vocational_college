@@ -4,7 +4,7 @@ const IndustrialAttachment = () => {
   return (
     <div>
      <div className="mx-4">
-      <h2 className="text-cente">
+      <h2 className="text-center">
         INDUSTRIAL ATTACHMENT
       </h2>
       <p className="pt-3">
