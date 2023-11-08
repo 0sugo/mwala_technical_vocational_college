@@ -4,7 +4,7 @@ const ElectricityDepartment = () => {
   return (
     <div>
      <div className="mx-4">
-      <h2 className="text-cente">
+      <h2 className="text-center">
       ELECTRICAL AND ELECTRONIC ENGINEERING DEPARTMENT
       </h2>
 
