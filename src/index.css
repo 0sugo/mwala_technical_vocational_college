@@ -34,7 +34,10 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
+.scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 svg {
   color:
 }
@@ -161,7 +164,6 @@ body::-webkit-scrollbar-thumb {
 .service-card .card-icon ion-icon {
   color: var(--content-color, var(--raisin-black));
   font-size: 6rem;
-
   --ionicon-stroke-width: 15px;
 }
 
