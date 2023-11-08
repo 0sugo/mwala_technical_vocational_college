@@ -79,8 +79,8 @@ const Principal = () => {
         Karanja Muia of North Carolina Central University.
       </p>
 
-      <h4 className="italic pt-4 font-bold text-xs">Kavita C. Kyuli, MKIM, CMEP</h4>
-      <h4 className="italic font-bold text-xs">Senior Principal/ BOG, Secretary</h4>
+      <h4 className="italic pt-4 font-bold text-xs">Martha Otwori</h4>
+      <h4 className="italic font-bold text-xs">Head of the Quality Assurance Office.</h4>
 
       <hr className="m-2" />
     </div>
