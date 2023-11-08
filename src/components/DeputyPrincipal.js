@@ -30,11 +30,6 @@ const DeputyPrincipal = () => {
         <li>The office is responsible for coordinating the development and implementation of the Institute Strategic Plan with regard to academic programs towards achievement of the intended short and long-term goals.</li>
       </ul>
 
-      <h4 className="italic pt-3">2. Certificate Level</h4>
-      <ul className="list-disc pl-10">
-        <li>Craft certificate in General Agriculture, 2yrs.</li>
-        <li>Craft certificate in Laboratory Science Technology, 2yrs</li>
-      </ul>
 
       <hr className="m-2" />
     </div>
