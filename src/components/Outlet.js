@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import FindCourse from "./FindCourse";
 import About from "./About";
 import Events from "./Events";
-import Departments from "./Departments";
+// import Departments from "./Departments";
 import Footer from "./Footer";
 const Outlet = () => {
   return (
@@ -12,7 +12,7 @@ const Outlet = () => {
       <FindCourse />
       <About />
       <Events />
-      <Departments />
+      {/* <Departments /> */}
       <Footer />
     </div>
   )
