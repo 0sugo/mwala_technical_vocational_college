@@ -16,9 +16,9 @@ import ElectricityDepartment from "./components/ElectricityDepartment";
 
 function App() {
   return (
-      <div>
+    <div>
       <Top />
-      <Nav/>
+      <Nav />
 
       <Routes>
         <Route path="/" element={<Outlet />} />
@@ -26,13 +26,21 @@ function App() {
         <Route path="/Industrial-Attachment" element={<IndustrialAttachment />} />
         <Route path="/Principal" element={<Principal />} />
         <Route path="/Deputy-Principal" element={<DeputyPrincipal />} />
-        <Route path="/Dean-of-Students" element={<DeanStudents/>} />
-        <Route path="/Performance-Contracting" element={<PerformanceContracting/>} />
-        <Route path="/Exam-Department" element={<ExamDepartment/>} />
+        <Route path="/Dean-of-Students" element={<DeanStudents />} />
+        <Route path="/Performance-Contracting" element={<PerformanceContracting />} />
+        <Route path="/Exam-Department" element={<ExamDepartment />} />
         <Route path="/Finance-Department" element={<FinanceDepartment />} />
-        <Route path="/Quality-Assuarance" element={<QualityAssuarance/>} />
-        <Route path="/Electricity&Electronic-Department" element={<ElectricityDepartment/>} />
+        <Route path="/Quality-Assuarance" element={<QualityAssuarance />} />
+        <Route path="/Electricity&Electronic-Department" element={<ElectricityDepartment />} />
       </Routes>
+
+      <div class="whats-float">
+        <a href=""
+          target="_blank">
+          <i class="fa fa-whatsapp"></i><span>WhatsApp<br /><small>+254 796536524</small></span>
+        </a>
+      </div>
+
     </div>
   );
 }
