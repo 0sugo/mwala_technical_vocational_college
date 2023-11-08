@@ -4,7 +4,7 @@ const Principal = () => {
   return (
     <div>
      <div className="mx-4">
-      <h2 className="text-cente">
+      <h2 className="text-center">
         Principals Desk
       </h2>
       <p className="pt-3">
