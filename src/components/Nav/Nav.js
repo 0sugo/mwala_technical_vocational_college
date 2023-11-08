@@ -41,8 +41,11 @@ const Nav = () => {
   }, []);
 
   return (
-    <main className={`sticky top-0 backdrop-blur z-10 overflow-y-scroll ${isMenuOpen ? 'h-screen' : ''}`} ref={navRef}>
+    <main className={`sticky top-0 backdrop-blur z-10 overflow-y-scroll scrollbar ${isMenuOpen ? 'h-screen' : ''}`} ref={navRef}>
       <div className="text-black">
+        <div className="marquee bg-[#6B2D30]">
+          <marquee className="text-white text-xl font-bold">January 2024 intake in progress... Apply now!</marquee>
+        </div>
         <div className="container mx-auto p-4">
           <nav className="flex flex-wrap items-center justify-between lg:mx-40 py-4 md:py-0 px-4 text-lg text-gray-700">
             <div>
@@ -77,22 +80,22 @@ const Nav = () => {
                   </a>
                   <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 border border-gray-300 ${isAcademicsOpen ? 'block' : 'hidden'}`}>
                     <li>
-                    <NavLink to="/applied-sciences" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Applied Sciences
-                    </NavLink>
+                      <NavLink to="/applied-sciences" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                        Applied Sciences
+                      </NavLink>
 
                     </li>
 
                     <li>
                       <NavLink to="/Electricity&Electronic-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Electricity&Electronics Department
+                        Electricity&Electronics Department
                       </NavLink>
                     </li>
 
                     <li>
-                    <NavLink to="/Industrial-Attachment" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                    Industrial Attachment
-                    </NavLink>
+                      <NavLink to="/Industrial-Attachment" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                        Industrial Attachment
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
@@ -104,38 +107,38 @@ const Nav = () => {
                   <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 border border-gray-300 ${isNonAcademicsOpen ? 'block' : 'hidden'}`}>
                     <li>
                       <NavLink to="/Principal" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Principal
+                        Principal
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/Deputy-Principal" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Deputy Principal
+                        Deputy Principal
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/Dean-of-Students" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Dean of Students
+                        Dean of Students
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/Performance-Contracting" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Performance Contracting
+                        Performance Contracting
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/Exam-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Exam Department
+                        Exam Department
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/Finance-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Finance Department
+                        Finance Department
                       </NavLink>
                     </li>
 
                     <li>
                       <NavLink to="/Quality-Assuarance" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
-                      Quality Assurance
+                        Quality Assurance
                       </NavLink>
                     </li>
                   </ul>
@@ -148,6 +151,8 @@ const Nav = () => {
             </div>
           </nav>
         </div>
+
+
       </div>
     </main>
   );
