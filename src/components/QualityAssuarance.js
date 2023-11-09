@@ -25,7 +25,7 @@ const QualityAssuarance = () => {
         Mwala Technical and Vocational College has identified as part of its philosophy the development of high quality programmes and graduates. To ensure the quality of the programmes/courses it offers, Mwala Technical and Vocational College has established an Internal Quality Assurance System which aims at maintaining and enhancing the quality of the learning experience of the student as well as to provide assurance to its stakeholders of the continuing high standards at the College.
       </p>
 
-      <h4 className="italic pt-3">The Quality Assurance Office through a committee has the following responsibilities:</h4>
+      <h4 className="italic pt-3 font-bold">The Quality Assurance Office through a committee has the following responsibilities:</h4>
       <ul className="list-disc pl-10">
         <li>Improving and enhancing the quality of the learning experience of students</li>
         <li>Providing assurance to stakeholders – students, parents, alumni, staff, employers, the general public, the government and accrediting agencies of the continuing high standards at Mwala Technical and Vocational College.</li>
