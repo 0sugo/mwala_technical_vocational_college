@@ -34,6 +34,8 @@ const IndustrialAttachment = () => {
         experience and avail role models for our trainees.
       </p>
 
+      <h4 className="italic pt-4 font-bold text-xs">Nduta Anthony Kamau</h4>
+      <h4 className="italic font-bold text-xs">HOD, Industrial Attachment.</h4>
 
       <hr className="m-2" />
     </div>
