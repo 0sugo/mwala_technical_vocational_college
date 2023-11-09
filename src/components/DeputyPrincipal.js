@@ -29,6 +29,7 @@ const DeputyPrincipal = () => {
 
         <li>The office is responsible for coordinating the development and implementation of the Institute Strategic Plan with regard to academic programs towards achievement of the intended short and long-term goals.</li>
       </ul>
+      
 
 
       <hr className="m-2" />
