@@ -25,7 +25,7 @@ const FinanceDepartment = () => {
       </ul>
 
       <h4 className="italic pt-4 font-bold text-xs">MR. NZIOKI BERNARD</h4>
-      <h4 className="italic font-bold text-xs">HEAD OF DEPARTMENT</h4>
+      <h4 className="italic font-bold text-xs">HOD ,FINANCE DEPARTMENT</h4>
 
       <hr className="m-2" />
     </div>
