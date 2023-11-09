@@ -62,7 +62,7 @@ const FindCourse = () => {
       'Certified Public Accounts-Final'];
 
   return (
-    <div className='mx-4'>
+    <div className='mx-4 md:mx-12'>
       <div className='flex flex-col mb-4'>
   <p className=' overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
     Study at Mwala
