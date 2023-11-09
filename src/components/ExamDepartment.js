@@ -42,6 +42,9 @@ const ExamDepartment = () => {
         <li>Preparation of internal examination timetable and allocation of rooms and trainers to supervise</li>
       </ul>
 
+      <h4 className="italic pt-4 text-xs font-bold">ENGR. NTHENGE WAMBUA</h4>
+      <h4 className="italic font-bold text-xs">HOD, EXAMS</h4>
+
       <hr className="m-2" />
     </div>
 
