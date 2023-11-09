@@ -5,7 +5,7 @@ const Principal = () => {
     <div>
      <div className="mx-4">
       <h2 className="text-center">
-        Principals Desk
+        Principal's Desk
       </h2>
       <p className="pt-3">
           Kavita C. Kyuli is the 1st Principal of the Mwala Technical &
