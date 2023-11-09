@@ -4,7 +4,7 @@ const DeanStudents = () => {
   return (
     <div>
       <div className="mx-4">
-      <h2 className="text-cente">
+      <h2 className="text-center">
         OFFICE OF THE DEAN OF STUDENTS
       </h2>
       <p className="pt-3">
@@ -46,6 +46,16 @@ const DeanStudents = () => {
         <li><span className='font-bold'>HELB Loans and Bursaries</span></li>
         <li><span className='font-bold'>Provision of students identification cards</span></li>
       </ul>
+
+      <h4 className="italic py-4 font-bold">SERVICES INCLUDE :</h4>
+      <p className="pt-3">
+      The college has a code of conduct which every student has to familiarize with and adhere to.The code is meant to ensure
+      that we maintain our core values as an institution but also provide conducive environmentfor all
+      </p>
+
+      <h4 className="italic pt-4 font-bold text-xs">Cyrus Musau</h4>
+      <h4 className="italic font-bold text-xs">Dean Of Students.</h4>
+      {/* <h4 className="italic font-bold text-xs underline">deanofstudents.mtvc@gmail.com.</h4> */}
 
       <hr className="m-2" />
     </div>
