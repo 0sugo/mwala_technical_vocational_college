@@ -68,7 +68,7 @@ const ElectricityDepartment = () => {
       </ul>
 
       <h4 className="italic pt-4 font-bold text-xs">Hawkins Annan Balewa</h4>
-      <h4 className="italic font-bold text-xs">Head of Department</h4>
+      <h4 className="italic font-bold text-xs">HOD, Electrical & Electronic Engineering.</h4>
 
       <hr className="m-2" />
     </div>
