@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import about1 from './images/about1.jpg';
 import about2 from './images/about2.jpg';
 
 const About = () => {
-  const slidesContainer = document.querySelector(".slides-container");
-  const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
-  const prevButton = document.querySelector(".prev");
-  const nextButton = document.querySelector(".next");
+  useEffect(() => {
+    const slidesContainer = document.querySelector(".slides-container");
+    const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
 
-  nextButton.addEventListener("click", () => {
-    slidesContainer.scrollLeft += slideWidth;
-  });
+    nextButton.addEventListener("click", () => {
+      slidesContainer.scrollLeft += slideWidth;
+    });
 
-  prevButton.addEventListener("click", () => {
-    slidesContainer.scrollLeft -= slideWidth;
-  });
+    prevButton.addEventListener("click", () => {
+      slidesContainer.scrollLeft -= slideWidth;
+    });
+  }, []);
 
   return (
     <div className='mx-4 pt-14 md:mx-12' id='about'>
