@@ -22,7 +22,6 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    // Add an event listener to handle clicks on the document body
     function handleOutsideClick(event) {
       if (navRef.current && !navRef.current.contains(event.target)) {
         setIsMenuOpen(false);
@@ -46,6 +45,7 @@ const Nav = () => {
         </div>
         <div className="container mx-auto">
           <nav className="flex flex-wrap items-center justify-between lg:mx-40 py-4 md:py-0 px-4 text-lg text-gray-700">
+
             <div>
               <img src={logo} alt="logo" className="w-12" />
             </div>
@@ -58,92 +58,91 @@ const Nav = () => {
               <FaBars className="marooner h-6 w-6" />
             </div>
 
-            <div className={`w-full md:flex md:items-center bg-blur md:w-auto bg-slate-50 ${isMenuOpen ? "block" : "hidden"}`}>
+            <div className={`w-full md:flex md:items-center bg-blur md:w-auto sm:bg-slate-50 md:bg-transparent ${isMenuOpen ? "block" : "hidden"}`}>
               <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 items-center">
-                <li className="hover:border-[#6B2D30]">
+                <li className="transition duration-300">
                   <a className="px-3 py-2 block hover:border-[#6B2D30]" href="/" onClick={() => setIsMenuOpen(false)}>Home</a>
                 </li>
                 <li>
-                  <a className="px-3 py-2 block" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+                  <a className="px-3 py-2 block hover:text-[#6B2D30]" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
                 </li>
 
-                <li>
-                  <a className="px-3 py-2 block" href="#events" onClick={() => setIsMenuOpen(false)}>College events</a>
+                <li className="transition duration-300">
+                  <a className="px-3 py-2 block hover:text-[#6B2D30]" href="#events" onClick={() => setIsMenuOpen(false)}>College events</a>
                 </li>
 
-                <li className="relative group">
+                <li className="relative group transition duration-300">
 
-                  <a className="px-3 py-2 block flex items-center gap-1" href="#academics" onClick={toggleAcademics}>
+                  <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30]" href="#academics" onClick={toggleAcademics}>
                     Academics <FaAngleDown className={`icon ${isAcademicsOpen ? 'rotate-180' : ''}`} />
                   </a>
-                  <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 border border-gray-300 ${isAcademicsOpen ? 'block' : 'hidden'}`}>
-                    <li>
-                      <NavLink to="/applied-sciences" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                  <ul className={`w-48 space-y-2 p-4 top-10 left-0 ${isAcademicsOpen ? 'block' : 'hidden'}`}>
+                    <li className="transition duration-300">
+                      <NavLink to="/applied-sciences" className="px-3 py-2 flex items-center hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Applied Sciences
                       </NavLink>
-
                     </li>
 
-                    <li>
-                      <NavLink to="/Electricity&Electronic-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Electricity&Electronic-Department" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Electricity&Electronics Department
                       </NavLink>
                     </li>
 
-                    <li>
-                      <NavLink to="/Industrial-Attachment" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Industrial-Attachment" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Industrial Attachment
                       </NavLink>
                     </li>
                   </ul>
                 </li>
 
-                <li>
-                  <a className="px-3 py-2 block flex items-center gap-1" href="#non-academics" onClick={toggleNonAcademics}>
+                <li className="transition duration-300">
+                  <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30]" href="#non-academics" onClick={toggleNonAcademics}>
                     Non-Academics <FaAngleDown className={`icon ${isNonAcademicsOpen ? 'rotate-180' : ''}`} />
                   </a>
-                  <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 border border-gray-300 ${isNonAcademicsOpen ? 'block' : 'hidden'}`}>
-                    <li>
-                      <NavLink to="/Principal" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                  <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 ${isNonAcademicsOpen ? 'block' : 'hidden'}`}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Principal" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Principal
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/Deputy-Principal" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Deputy-Principal" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Deputy Principal
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/Dean-of-Students" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Dean-of-Students" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Dean of Students
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/Performance-Contracting" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Performance-Contracting" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Performance Contracting
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/Exam-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Exam-Department" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Exam Department
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/Finance-Department" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Finance-Department" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Finance Department
                       </NavLink>
                     </li>
 
-                    <li>
-                      <NavLink to="/Quality-Assuarance" className="px-3 py-2 block" onClick={() => setIsMenuOpen(false)}>
+                    <li className="transition duration-300">
+                      <NavLink to="/Quality-Assuarance" className="px-3 py-2 block hover:text-[#6B2D30]" onClick={() => setIsMenuOpen(false)}>
                         Quality Assurance
                       </NavLink>
                     </li>
                   </ul>
                 </li>
 
-                <li>
-                  <a className="px-3 py-2 block" href="#quick" onClick={() => setIsMenuOpen(false)}>Quick links</a>
+                <li className="transition duration-300">
+                  <a className="px-3 py-2 block hover:text-[#6B2D30]" href="#quick" onClick={() => setIsMenuOpen(false)}>Quick links</a>
                 </li>
               </ul>
             </div>
