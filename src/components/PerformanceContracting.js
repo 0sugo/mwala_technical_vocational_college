@@ -15,11 +15,19 @@ const PerformanceContracting = () => {
 
       <p className="pt-3">
         Performance contracting started in Kenya in 2003 after undergoing piloting since 1989. Mwala Technical and vocational Training college joined the Performance Contracting (PC) in this financial year 2022/2023 of the 19th cycle Performance contracting.
-        ance contracting goes through a cycle of negotiation, vetting, implementation and finally evaluation. At the close of the financial year, preparation of the new financial year PC and preparation for the evaluation of the previous FY PC overlap creating a period of intense concentration and focus which only the strongest team sail through without bruises.
+        ance contracting goes through a cycle of negotiation, vetting, implementation and finally evaluation.
+      </p>
+
+      <p className="pt-3">
+        At the close of the financial year, preparation of the new financial year PC and preparation for the evaluation of the previous FY PC overlap creating a period of intense concentration and focus which only the strongest team sail through without bruises.
       </p>
 
       <p className="pt-3">
         The evaluation scale runs from 1 to 5 where the lower the score the better the performance. Mwala Technical and Vocational College aims to perform good during this financial year of the 19th cycle performance contracting as everyone from the top management to the lowest is playing her part to make the PC implementation achieved as per the negotiation with the ministry.
+
+      </p>
+
+      <p className="pt-3">
         At Mwala Technical and Vocational Training college, we aspire to become the benchmark for performance contracting where we lead and others follow.
       </p>
 
