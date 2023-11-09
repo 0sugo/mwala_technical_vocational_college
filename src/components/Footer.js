@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <div className=''>
       <QuickLinks />
-      <div className='my-4 mx-4 flex flex-col gap-3 ]'>
-        <div className='my-4'>
+      <div className='my-4 mx-4 flex flex-col md:flex-row gap-3'>
+        <div className='my-4 md:w-1/3 '>
           <iframe
             title="Google Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.668156167375!2d37.44806987496584!3d-1.3757876986112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182585c62c2e2a75%3A0xb263f686bb513761!2sMwala%20Technical%20and%20Vocational%20College!5e0!3m2!1sen!2ske"
@@ -20,7 +20,7 @@ const Footer = () => {
            ></iframe>
         </div>
 
-        <div className=''>
+        <div className='md:pt-6'>
           <div >
             <a href="mailto:mwalatvc@gmail.com" className='flex items-center'>
               <ion-icon name="mail-outline"></ion-icon>
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='my-4'>
+        <div className='my-4 md:w-1/3'>
           <h4 className='text-2xl mb-2'>Newsletter</h4>
           <p className='greyer'>Keep up with our weekly news and updates on education. Enter your e-mail and subscribe to our newsletter.</p>
           <form className=" flex items-center mt-2">
