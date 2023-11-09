@@ -53,6 +53,9 @@ const AppliedSciences = () => {
         <li>Craft certificate in Laboratory Science Technology, 2yrs</li>
       </ul>
 
+      <h4 className="italic pt-4 font-bold text-xs">Cyrus Musau</h4>
+      <h4 className="italic font-bold text-xs">HOD, Agriculture & Applied Sciences.</h4>
+
       <hr className="m-2" />
     </div>
 
