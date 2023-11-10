@@ -51,7 +51,8 @@ const Nav = () => {
             </div>
 
             <div>
-              <a href="/" className="judson leading-9 tracking-wider text-3xl text-[#06294D] ">MTVC</a>
+              {/* <a href="/" className="judson leading-9 tracking-wider text-3xl text-[#06294D] ">Mwala Technical Vocational College</a> */}
+              <a href="/" className="judson leading-2 uppercase  text-[#06294D] "><span className="">Mwala Technical <br /> Vocational College</span></a>
             </div>
 
             <div className={`md:hidden cursor-pointer`} onClick={toggleMenu}>
