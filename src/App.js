@@ -21,6 +21,7 @@ function App() {
       <Top />
       {/* <Nav /> */}
       <NavBar />
+      
       <Routes>
         <Route path="/" element={<Outlet />} />
         <Route path="/applied-sciences" element={<AppliedSciences />} />
@@ -36,7 +37,7 @@ function App() {
       </Routes>
 
       <div class="whats-float">
-        <a href=""
+        <a href="/"
           target="_blank">
           <i class="fa fa-whatsapp"></i><span>WhatsApp<br /><small>+254 796536524</small></span>
         </a>
