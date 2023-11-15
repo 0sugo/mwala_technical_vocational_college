@@ -1,12 +1,17 @@
 import React from 'react'
+import Princi from '../components/images/principal.png'
 
 const ElectricityDepartment = () => {
   return (
     <div>
-     <div className="mx-4">
-      <h2 className="text-center">
+     <div className="mx-4 lg:mx-32">
+      <h2 className="text-center text-3xl font-bold mb-4">
       ELECTRICAL AND ELECTRONIC ENGINEERING DEPARTMENT
       </h2>
+
+      <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
+          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+        </div>
 
       <h4 className="italic font-bold pt-3">Head of Department</h4>
 
