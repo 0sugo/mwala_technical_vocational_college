@@ -31,14 +31,14 @@ const About = () => {
         <div className='flex justify-center my-3 md:hidden'>
           <img src={about1} alt='about pic' className='rounded-lg' />
         </div>
-        <p className='text-[#5a5a5a]'>We are middle college situated 28 kilometers East of Machakos Town. Our college is specializing in training courses in Technical and business. Our students are trained with mind to fulfill employability challenge of the 21st century.</p>
+        <p className='text-[#5a5a5a] md:text-lg'>We are middle college situated 28 kilometers East of Machakos Town. Our college is specializing in training courses in Technical and business. Our students are trained with mind to fulfill employability challenge of the 21st century.</p>
       </div>
 
       <div className='flex  flex-col-reverse my-4'>
         <div className='flex justify-center my-3 md:hidden'>
           <img src={about2} alt='about pic' className='rounded-lg' />
         </div>
-        <p className='text-[#5a5a5a]'>At Mwala Technical Vocational College, we are dedicated to fostering a holistic learning environment that goes beyond academic excellence. Our state-of-the-art facilities and vibrant campus life offer students a rich tapestry of experiences. We encourage extracurricular activities, clubs, and community engagement to nurture a well-rounded development. The emphasis is not only on academic success but also on character building, leadership skills, and a sense of social responsibility. Our commitment to providing a comprehensive education extends beyond the classroom, ensuring that students graduate not only with knowledge and skills but also with a sense of purpose and a readiness to contribute positively to society.</p>
+        <p className='text-[#5a5a5a] md:text-lg'>At Mwala Technical Vocational College, we are dedicated to fostering a holistic learning environment that goes beyond academic excellence. Our state-of-the-art facilities and vibrant campus life offer students a rich tapestry of experiences. We encourage extracurricular activities, clubs, and community engagement to nurture a well-rounded development. The emphasis is not only on academic success but also on character building, leadership skills, and a sense of social responsibility. Our commitment to providing a comprehensive education extends beyond the classroom, ensuring that students graduate not only with knowledge and skills but also with a sense of purpose and a readiness to contribute positively to society.</p>
       </div>
 
       <div className="relative">
