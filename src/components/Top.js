@@ -2,7 +2,7 @@ import React from 'react'
 
 const Top = () => {
   return (
-    <div className='bg-[#06294D] w-full p-4'>
+    <div className='bg-[#06294D] w-full p-4 lg:py-2'>
       <div >
         <ul className='flex flex-col justify-center'>
           <li className='flex justify-center items-center mr-3'>
