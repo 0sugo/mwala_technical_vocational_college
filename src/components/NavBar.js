@@ -9,16 +9,16 @@ const NavBar = () => {
 
   return (
     <div div className="sticky top-0 backdrop-blur z-10 ">
-      <div className="marquee bg-[#6B2D30] md:pt-6">
-        <marquee className="text-white font-bold tracking-widest md:text-2xl">January 2024 intake in progress... Apply now!</marquee>
+      <div className="marquee bg-[#6B2D30] md:pt-4">
+        <marquee className="text-white font-bold tracking-widest md:text-xl" scrollamount="10" behavior="scroll" direction="left" loop="infinite">January 2024 intake in progress... Apply now!  ||  January 2024 intake in progress... Apply now!</marquee>
       </div>
-      <div className="relative bg-white">
+      <div className="relative bg-white ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
-          <div className="flex justify-between flex-wrap lg:flex-nowrap items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+          <div className="flex justify-between flex-wrap lg:flex-nowrap items-center border-b-2 border-gray-100 py-6 md:py-2 lg:py-1 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:justify-end lg:w-0 lg:flex-1 ">
               <a href="#">
                 <span className="sr-only">Workflow</span>
-                <img src={logo} alt="logo" className="w-14 md:w-28" />
+                <img src={logo} alt="logo" className="w-14 md:w-20" />
               </a>
             </div>
 
@@ -56,13 +56,13 @@ const NavBar = () => {
             <nav className="hidden md:flex space-x-10 pt-4">
               <a
                 href="/"
-                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg"
+                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 Home
               </a>
               <a
                 href="#about"
-                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg"
+                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 About
               </a>
@@ -77,7 +77,7 @@ const NavBar = () => {
                   "
                   onClick={() => (setFlyer(!flyer), setFlyerTwo(false))}
                 >
-                  <span>Academic</span>
+                  <span className="md:text-lg ">Academic</span>
                   {/*
                   Heroicon name: solid/chevron-down
 
@@ -216,14 +216,14 @@ const NavBar = () => {
               </div>
 
 
-              <div className="relative md:text-lg ">
+              <div className="relative md:text-lg whitespace-nowrap">
                 {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
                 <button
                   type="button"
-                  className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="group bg-white rounded-md text-gray-500 inline-flex md:max-w-fit items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   onClick={() => (setFlyerTwo(!flyerTwo), setFlyer(false))}
                 >
-                  <span>Non-Academic</span>
+                  <span className="md:text-lg ">Non-Academic</span>
                   {/*
               Heroicon name: solid/chevron-down
 
@@ -265,8 +265,8 @@ const NavBar = () => {
                       : " opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
                   }
                 >
-                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                    <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-x-hidden overflow-y-scroll lg:max-h-[80vh] whitespace-normal">
+                    <div className="relative grid gap-4 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                       <NavLink
                         href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
@@ -534,14 +534,14 @@ const NavBar = () => {
 
               <a
                 href="#events"
-                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg"
+                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 Events
               </a>
 
               <a
                 href="#quick"
-                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg"
+                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 Links
               </a>
