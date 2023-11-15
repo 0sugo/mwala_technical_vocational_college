@@ -7,12 +7,12 @@ const Top = () => {
         <ul className='flex flex-col justify-center'>
           <li className='flex justify-center items-center mr-3'>
             <ion-icon name="call" className='' id='whiter'></ion-icon>
-            <span className='ml-2 text-white' >0796536524 / 0722501259</span>
+            <span className='ml-2 text-white md:text-xl' >0796536524 / 0722501259</span>
           </li>
 
           <li className='flex justify-center items-center '>
             <ion-icon name="mail" className='text-white'  id='whiter'></ion-icon>
-            <span className='ml-2 text-white'>mwalatvc@gmail.com</span>
+            <span className='ml-2 text-white md:text-xl'>mwalatvc@gmail.com</span>
           </li>
         </ul>
       </div>
