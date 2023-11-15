@@ -1,12 +1,17 @@
 import React from 'react'
+import Princi from '../components/images/principal.png'
 
 const ExamDepartment = () => {
   return (
     <div>
-     <div className="mx-4">
-      <h2 className="text-center">
+     <div className="mx-4 lg:mx-32">
+      <h2 className="text-center text-3xl font-bold mb-4">
         EXAM DEPARTMENT
       </h2>
+
+      <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
+          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+        </div>
 
       <h4 className="pt-3 text-lg font-bold italic">HOD Examinations</h4>
 
