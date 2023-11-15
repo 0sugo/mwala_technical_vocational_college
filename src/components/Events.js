@@ -4,9 +4,9 @@ import principal from './images/principal.jpeg'
 
 const Events = () => {
   return (
-    <div className='mx-4 pt-14 md:mx-12' id='events'>
+    <div className='mx-4 pt-14 md:mx-12 lg:mx-36' id='events'>
       <div className='flex flex-col mb-2'>
-        <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
+        <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold'>
           College events
           <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
         </h2>
