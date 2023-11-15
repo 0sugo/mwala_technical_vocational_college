@@ -1,12 +1,18 @@
 import React from "react";
+import Princi from '../components/images/principal.png'
 
 const AppliedSciences = () => {
   return (
    <div>
-     <div className="mx-4">
-      <h2 className="text-center">
+     <div className="mx-4 lg:mx-32">
+      <h2 className="text-center text-3xl font-bold mb-4">
         AGRICULTURE AND APPLIED SCIENCE DEPARTMENT
       </h2>
+
+      <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
+          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+        </div>
+
       <p className="pt-3">
         Department of agriculture and applied science is one of the premier
         departments at Mwala Technical and Vocational College. The department
