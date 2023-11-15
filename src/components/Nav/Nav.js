@@ -38,43 +38,48 @@ const Nav = () => {
   }, []);
 
   return (
-    <main className={`sticky top-0 backdrop-blur z-10 overflow-y-scroll scrollbar ${isMenuOpen ? 'h-screen' : ''}`} ref={navRef}>
+    <main className={`sticky top-0 backdrop-blur md:bg-white z-10 overflow-y-scroll scrollbar ${isMenuOpen ? 'h-screen' : ''}`} ref={navRef}>
       <div className="text-black">
         <div className="marquee bg-[#6B2D30] md:pt-6">
           <marquee className="text-white font-bold tracking-widest md:text-2xl">January 2024 intake in progress... Apply now!</marquee>
         </div>
         <div className="container mx-auto">
-          <nav className="flex flex-wrap items-center justify-between lg:mx-40 py-4 md:py-0 px-4 text-lg text-gray-700">
+          <nav className="flex flex-wrap items-center md:items-end justify-between md:justify-start md:gap-3 lg:mx-40 py-4 md:py-0 px-4 text-lg text-gray-700">
 
             <div>
-              <img src={logo} alt="logo" className="w-12" />
+              <img src={logo} alt="logo" className="w-14 md:w-20" />
             </div>
 
             <div>
               {/* <a href="/" className="judson leading-9 tracking-wider text-3xl text-[#06294D] ">Mwala Technical Vocational College</a> */}
-              <a href="/" className="judson leading-2 uppercase  text-[#06294D] "><span className="">Mwala Technical <br /> Vocational College</span></a>
+              <a href="/" className="judson leading-2 uppercase font-bold text-[#06294D] md:hidden"><span className="">Mwala Technical <br /> Vocational College</span></a>
+              <a href="/" className="judson leading-2 uppercase font-bold text-[#06294D] hidden md:block md:ml-6 text-2xl"><span className="">Mwala Technical Vocational College</span></a>
             </div>
 
             <div className={`md:hidden cursor-pointer`} onClick={toggleMenu}>
               <FaBars className="marooner h-6 w-6" />
             </div>
 
-            <div className={`w-full md:flex md:items-center bg-blur md:w-auto sm:bg-slate-50 md:bg-transparent ${isMenuOpen ? "block" : "hidden"}`}>
+            <div className={`w-full md:flex md:items-center bg-blur md:w-auto sm:bg-slate-50 md:py-4 ${isMenuOpen ? "block" : "hidden"}`}>
               <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 items-center">
                 <li className="transition duration-300">
-                  <a className="px-3 py-2 block hover:border-[#6B2D30]" href="/" onClick={() => setIsMenuOpen(false)}>Home</a>
+                  <a className="px-3 py-2 block hover:border-[#6B2D30] md:text-lg" href="/" onClick={() => setIsMenuOpen(false)}>Home</a>
                 </li>
                 <li>
-                  <a className="px-3 py-2 block hover:text-[#6B2D30]" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+                  <a className="px-3 py-2 block hover:text-[#6B2D30] md:text-lg" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
                 </li>
 
                 <li className="transition duration-300">
-                  <a className="px-3 py-2 block hover:text-[#6B2D30]" href="#events" onClick={() => setIsMenuOpen(false)}>College events</a>
+                  <a className="px-3 py-2 block hover:text-[#6B2D30] md:text-lg" href="#events" onClick={() => setIsMenuOpen(false)}>Events</a>
+                </li>
+
+                <li className="transition duration-300">
+                  <a className="px-3 py-2 block hover:text-[#6B2D30] md:text-lg" href="#quick" onClick={() => setIsMenuOpen(false)}>Links</a>
                 </li>
 
                 <li className="relative group transition duration-300">
 
-                  <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30]" href="#academics" onClick={toggleAcademics}>
+                  <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30] md:text-lg" href="#academics" onClick={toggleAcademics}>
                     Academics <FaAngleDown className={`icon ${isAcademicsOpen ? 'rotate-180' : ''}`} />
                   </a>
                   <ul className={`w-48 space-y-2 p-4 top-10 left-0 ${isAcademicsOpen ? 'block' : 'hidden'}`}>
@@ -99,7 +104,7 @@ const Nav = () => {
                 </li>
 
                 <li className="transition duration-300">
-                  <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30]" href="#non-academics" onClick={toggleNonAcademics}>
+                  <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30] md:text-lg" href="#non-academics" onClick={toggleNonAcademics}>
                     Non-Academics <FaAngleDown className={`icon ${isNonAcademicsOpen ? 'rotate-180' : ''}`} />
                   </a>
                   <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 ${isNonAcademicsOpen ? 'block' : 'hidden'}`}>
@@ -141,10 +146,6 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-
-                <li className="transition duration-300">
-                  <a className="px-3 py-2 block hover:text-[#6B2D30]" href="#quick" onClick={() => setIsMenuOpen(false)}>Quick links</a>
-                </li>
               </ul>
             </div>
           </nav>
@@ -157,3 +158,6 @@ const Nav = () => {
 };
 
 export default Nav;
+
+
+
