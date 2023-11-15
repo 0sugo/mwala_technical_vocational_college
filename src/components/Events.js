@@ -17,8 +17,8 @@ const Events = () => {
         </div>
 
         <div className='flex flex-col md:w-1/2'>
-          <h4 className='text-xl mb-2'>News on Admissions</h4>
-          <p className='font-light greyer md:text-justify'>Admission is currently on going, all applicants are required to apply
+          <h4 className='text-xl mb-2 md:text-2xl'>News on Admissions</h4>
+          <p className='font-light greyer md:text-justify md:text-lg'>Admission is currently on going, all applicants are required to apply
             before the dealine and have all the neccessities required before
             admission...
           </p>
@@ -39,8 +39,8 @@ const Events = () => {
         </div>
 
         <div className='flex flex-col md:w-1/2 '>
-          <h4 className='text-xl mb-2'>News from Principal</h4>
-          <p className='text-[#5a5a5a] md:text-justify'> Join us in shaping a brighter future. At Mwala Technical and Vocational College, we're dedicated to
+          <h4 className='text-xl mb-2 md:text-2xl'>News from Principal</h4>
+          <p className='text-[#5a5a5a] md:text-justify md:text-lg'> Join us in shaping a brighter future. At Mwala Technical and Vocational College, we're dedicated to
             providing a world-class education and fostering a spirit of curiosity, innovation, and excellence...</p>
           <div className='flex justify-center my-4'>
             <button type='button' className='flex items-center gap-1 bg-[#891110] p-2 rounded-lg hover:bg-[#06294D] text-white py-3 px-8 shadow-md hover:shadow-2xl transition duration-500'>
