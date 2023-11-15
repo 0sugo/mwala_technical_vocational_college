@@ -19,9 +19,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className='mx-4 pt-14 md:mx-12' id='about'>
+    <div className='mx-4 pt-14 md:mx-12 lg:mx-36' id='about'>
       <div className='flex flex-col mb-4'>
-        <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
+        <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold'>
           About us
           <span className="absolute bottom-0 left-0 w-1/5 h-1 md:w-1/12 bg-black"></span>
         </h2>
