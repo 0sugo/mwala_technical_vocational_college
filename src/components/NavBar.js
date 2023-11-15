@@ -122,8 +122,9 @@ const NavBar = () => {
                 >
                   <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-x-hidden">
                     <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 overflow-x-hidden">
-                      <a
+                      <NavLink
                         href="#"
+                        to="/applied-sciences"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/chart-bar */}
@@ -150,9 +151,10 @@ const NavBar = () => {
                             Get a better understanding of what this department entails
                           </p>
                         </div>
-                      </a>
-                      <a
+                      </NavLink>
+                      <NavLink
                         href="#"
+                        to="/Electricity&Electronic-Department"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/cursor-click */}
@@ -179,9 +181,10 @@ const NavBar = () => {
                             Get a better understanding of what this department entails
                           </p>
                         </div>
-                      </a>
-                      <a
+                      </NavLink>
+                      <NavLink
                         href="#"
+                        to="/Industrial-Attachment"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/shield-check */}
@@ -209,7 +212,7 @@ const NavBar = () => {
                             Get a better understanding of what this department entails
                           </p>
                         </div>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
