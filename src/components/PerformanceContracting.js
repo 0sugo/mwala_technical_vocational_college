@@ -1,12 +1,18 @@
 import React from 'react'
+import Princi from '../components/images/principal.png'
 
 const PerformanceContracting = () => {
   return (
     <div>
-     <div className="mx-4">
-      <h2 className="text-center">
+     <div className="mx-4 lg:mx-32">
+      <h2 className="text-center text-3xl font-bold mb-4">
         PERFORMANCE CONTRACTING DEPARTMENT
       </h2>
+
+      <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
+          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+        </div>
+
       <p className="pt-3">
         Performance Contracting is a management tool used to track the accountability of publicly funded government Ministries, Departments and Agencies (MDAs).
         It is a freely negotiated performance agreement between the National government and the respective MDA.
