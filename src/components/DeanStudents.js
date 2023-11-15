@@ -1,5 +1,5 @@
 import React from 'react'
-import Princi from '../components/images/principal.png'
+import Princi from '../components/images/Musau.png'
 
 const DeanStudents = () => {
   return (
