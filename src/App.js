@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from './components/Nav/Nav';
+// import Nav from './components/Nav/Nav';
 import Top from "./components/Top";
 import { Routes, Route } from "react-router-dom";
 import AppliedSciences from "./components/AppliedSciences";
@@ -13,13 +13,14 @@ import DeanStudents from "./components/DeanStudents";
 import DeputyPrincipal from "./components/DeputyPrincipal";
 import Principal from "./components/Principal";
 import ElectricityDepartment from "./components/ElectricityDepartment";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div>
       <Top />
-      <Nav />
-
+      {/* <Nav /> */}
+      <NavBar />
       <Routes>
         <Route path="/" element={<Outlet />} />
         <Route path="/applied-sciences" element={<AppliedSciences />} />
