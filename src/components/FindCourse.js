@@ -62,9 +62,9 @@ const FindCourse = () => {
     'Certified Public Accounts-Final'];
 
   return (
-    <div className='mx-4 md:mx-12'>
+    <div className='mx-4 md:mx-12 lg:mx-36'>
       <div className='flex flex-col mb-4'>
-        <p className=' overflow-hidden mt-16 pb-2 relative uppercase text-2xl font-bold'>
+        <p className=' overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold'>
           Study at Mwala
           <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
         </p>
@@ -77,28 +77,30 @@ const FindCourse = () => {
         training.
       </p>
 
-      <div className='flex items-center mt-8 md:text-lg'>
-        <img src={guarantee} alt='guarantee' className='w-16 mr-3' />
-        <p>Guarantee attachment and insuarance cover</p>
+      <div className='flex justify-between items-center gap-3'>
+        <div className='flex items-center mt-8 md:text-lg lg:w-1/3'>
+          <img src={guarantee} alt='guarantee' className='w-16 mr-3' />
+          <p>Guarantee attachment and insuarance cover</p>
+        </div>
+
+        <hr className='w-full my-2 border-black lg:hidden' />
+
+        <div className='flex items-center md:text-lg lg:mt-8 lg:border-l-4 lg:border-r-4 lg:px-4 lg:border-black'>
+          <img src={project_work} alt='project_work' className='w-16 mr-3' />
+          <p>Sufficient practical course work</p>
+        </div>
+
+        <hr className='w-full my-2  border-black lg:hidden' />
+
+        <div className='flex items-center md:text-lg lg:w-1/3 lg:mt-8'>
+          <img src={syllabus} alt='syllabus' className='w-16 mr-3' />
+          <p>Full &on-time syllabus coverage</p>
+        </div>
+
+        <hr className='w-full my-2 border-black lg:hidden' />
       </div>
 
-      <hr className='w-full my-2 border-black' />
-
-      <div className='flex items-center md:text-lg'>
-        <img src={project_work} alt='project_work' className='w-16 mr-3' />
-        <p>Sufficient practical work</p>
-      </div>
-
-      <hr className='w-full my-2  border-black' />
-
-      <div className='flex items-center md:text-lg'>
-        <img src={syllabus} alt='syllabus' className='w-16 mr-3' />
-        <p>Full syllabus coverage</p>
-      </div>
-
-      <hr className='w-full my-2 border-black' />
-
-      <div className="bg-[#891110] p-4 mt-8 rounded-lg">
+      <div className="bg-[#891110] p-4 mt-8 rounded-lg lg:w-9/12 lg:mx-auto lg:pt-8 lg:mt-16">
         <p className='text-center font-bold'>Find a course for you...</p>
         <form className="md:text-lg" >
 
