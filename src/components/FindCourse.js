@@ -77,7 +77,7 @@ const FindCourse = () => {
         training.
       </p>
 
-      <div className="flex justify-between items-center gap-3">
+      <div className="lg:flex lg:ustify-between lg:items-center lg:gap-3">
         <div className="flex items-center mt-8 md:text-lg lg:w-1/3">
           <img src={guarantee} alt="guarantee" className="w-16 mr-3" />
           <p>Guarantee attachment and insuarance cover</p>
