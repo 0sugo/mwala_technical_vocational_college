@@ -5,7 +5,7 @@ const QuickLinks = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMdScreen(window.innerWidth >= 768); // Adjust the breakpoint as needed
+      setIsMdScreen(window.innerWidth >= 768);
     };
 
     window.addEventListener('resize', handleResize);
@@ -56,7 +56,11 @@ const QuickLinks = () => {
             <a className="hover:text-blue-800 hover:underline" href="/">Staff portal</a>
             <a className="hover:text-blue-800 hover:underline" href="/">Staff Vacancy</a>
             <a className="hover:text-blue-800 hover:underline" href="/">Sport activities</a>
-            <a className="hover:text-blue-800 hover:underline" href="/">Tender's application</a>
+            <a className="hover:text-blue-800 hover:underline" href="/">
+              Tender
+              {'\''}
+              s application
+            </a>
             <a className="hover:text-blue-800 hover:underline" href="/">Environment policy</a>
           </div>
         </details>

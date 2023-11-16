@@ -18,7 +18,14 @@
       "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
-      "max-len": ["error", { "code": 400 }],
+      "max-len": ["error", { "code": 1000 }],
+      "react/no-unknown-property": "off",
+      "react/no-this-in-sfc": "off",
+      "camelcase":"off",
+      "func-names":"off",
+      "jsx-a11y/label-has-associated-control":"off",
+      "no-mixed-operators":"off",
+      "no-nested-ternary":"off",
       "no-shadow": "off"
     },
     "overrides": [

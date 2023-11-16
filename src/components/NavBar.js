@@ -8,7 +8,7 @@ const NavBar = () => {
   const [flyerTwo, setFlyerTwo] = React.useState(false);
 
   return (
-    <div div className="sticky top-0 backdrop-blur z-10 ">
+    <div className="sticky top-0 backdrop-blur z-10 ">
       <div className="marquee-container bg-[#6B2D30] md:pt-4">
         <p className="marquee-text text-white font-bold tracking-widest md:text-xl" scrollamount="10" behavior="scroll" direction="left" loop="infinite">January 2024 intake in progress... Apply now!  ||  January 2024 intake in progress... Apply now!</p>
       </div>
@@ -16,7 +16,7 @@ const NavBar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
           <div className="flex justify-between flex-wrap lg:flex-nowrap items-center border-b-2 border-gray-100 py-6 md:py-2 lg:py-1 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:justify-end lg:w-0 lg:flex-1 ">
-              <a href="#">
+              <a href="/">
                 <span className="sr-only">Workflow</span>
                 <img src={logo} alt="logo" className="w-14 md:w-20" />
               </a>
@@ -81,7 +81,12 @@ const NavBar = () => {
                   className="
                    group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 pb-8'
                   "
-                  onClick={() => (setFlyer(!flyer), setFlyerTwo(false))}
+                  // onClick={() => (setFlyer(!flyer), setFlyerTwo(false))}
+                  onClick={() => {
+                    setFlyerTwo(!flyerTwo);
+                    setFlyer(false);
+                  }}
+
                 >
                   <span className="md:text-lg ">Academic</span>
                   {/*
@@ -229,7 +234,12 @@ const NavBar = () => {
                 <button
                   type="button"
                   className="group bg-white rounded-md text-gray-500 inline-flex md:max-w-fit items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                  onClick={() => (setFlyerTwo(!flyerTwo), setFlyer(false))}
+                  // onClick={() => (setFlyerTwo(!flyerTwo), setFlyer(false))}
+                  onClick={() => {
+                    setFlyerTwo(!flyerTwo);
+                    setFlyer(false);
+                  }}
+
                 >
                   <span className="md:text-lg ">Non-Academic</span>
                   {/*
@@ -503,7 +513,7 @@ const NavBar = () => {
                         <ul className="mt-4 space-y-4">
                           <li className="text-base truncate">
                             <a
-                              href="#"
+                              href="/"
                               className="font-medium text-gray-900 hover:text-gray-700"
                             >
                               Boost your conversion rate
@@ -511,7 +521,7 @@ const NavBar = () => {
                           </li>
                           <li className="text-base truncate">
                             <a
-                              href="#"
+                              href="/"
                               className="font-medium text-gray-900 hover:text-gray-700"
                             >
                               How to use search engine optimization to drive
@@ -520,7 +530,7 @@ const NavBar = () => {
                           </li>
                           <li className="text-base truncate">
                             <a
-                              href="#"
+                              href="/"
                               className="font-medium text-gray-900 hover:text-gray-700"
                             >
                               Improve your customer experience
@@ -530,7 +540,7 @@ const NavBar = () => {
                       </div>
                       <div className="mt-5 text-sm">
                         <a
-                          href="#"
+                          href="/"
                           className="font-medium text-indigo-600 hover:text-indigo-500"
                         >
                           {' '}
@@ -647,7 +657,7 @@ const NavBar = () => {
                     onClick={() => setOpen(!open)}
                   >
                     {/* Heroicon name: outline/cursor-click */}
-                    <svg className="flex-shrink-0 h-6 w-6 text-[#6B2D30]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                    <svg className="flex-shrink-0 h-6 w-6 text-[#6B2D30]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                     </svg>
 
@@ -661,7 +671,7 @@ const NavBar = () => {
                     onClick={() => setOpen(!open)}
                   >
                     {/* Heroicon name: outline/shield-check */}
-                    <svg className="flex-shrink-0 h-6 w-6 text-[#6B2D30]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                    <svg className="flex-shrink-0 h-6 w-6 text-[#6B2D30]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
                     </svg>
 
@@ -670,7 +680,7 @@ const NavBar = () => {
                     </span>
                   </a>
                   <a
-                    href="#"
+                    href="#quick"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setOpen(!open)}
                   >
@@ -682,7 +692,6 @@ const NavBar = () => {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                     </svg>

@@ -42,7 +42,9 @@ const Events = () => (
         <h4 className="text-xl mb-2 md:text-2xl">News from Principal</h4>
         <p className="text-[#5a5a5a] md:text-justify md:text-lg">
           {' '}
-          Join us in shaping a brighter future. At Mwala Technical and Vocational College, we're dedicated to
+          Join us in shaping a brighter future. At Mwala Technical and Vocational College, we
+          {'\''}
+          re dedicated to
           providing a world-class education and fostering a spirit of curiosity, innovation, and excellence...
         </p>
         <div className="flex justify-center my-4">

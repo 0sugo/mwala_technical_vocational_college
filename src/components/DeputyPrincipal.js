@@ -23,15 +23,11 @@ const DeputyPrincipal = () => (
       </p>
 
       <ul className="list-disc pl-10">
-        <li> Development of key institute’s strategic aims as well as participation in the formulation/review of academic policies and preparation /review of academic work manuals and procedures.</li>
-
-        <li>Corporate planning, staff recruitment, training of administrative staff, staff and students’ discipline, personnel administration and registry administration</li>
-
-        <li>Chairing a number of strategic institute committees, such as Institute Academic Board/ examinations and Timetable among others.</li>
-
-        <li>Working with the principal’s office in development of institutional and professional capacities aimed at enhancing the provision of quality and relevant technical education and training, including Staff Continuous Professional</li>
-
-        <li>The office is responsible for coordinating the development and implementation of the Institute Strategic Plan with regard to academic programs towards achievement of the intended short and long-term goals.</li>
+        <li>Development of key institute’s strategic aims as well as participation in the formulation/review of academic policies and preparation/review of academic work manuals and procedures.</li>
+        <li>Corporate planning, staff recruitment, training of administrative staff, staff and students’ discipline, personnel administration, and registry administration</li>
+        <li>Chairing a number of strategic institute committees, such as Institute Academic Board/examinations and Timetable among others.</li>
+        <li>Working with the principal’s office in the development of institutional and professional capacities aimed at enhancing the provision of quality and relevant technical education and training, including Staff Continuous Professional</li>
+        <li>The office is responsible for coordinating the development and implementation of the Institute Strategic Plan with regard to academic programs towards the achievement of the intended short and long-term goals.</li>
       </ul>
 
       <hr className="m-2" />
