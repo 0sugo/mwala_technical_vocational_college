@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import heropic from './images/heropic.jpg';
-import resized from './images/resized.jpg';
 import Alpine from 'alpinejs';
 
 const Hero = () => {
