@@ -283,3 +283,22 @@ body::-webkit-scrollbar-thumb {
 .whats-float:hover i  {
   transform:rotate(360deg);
 }
+/* Marquee */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marqueeAnimation 20s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
