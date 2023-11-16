@@ -1,17 +1,16 @@
-import React from 'react'
-import Princi from '../components/images/principal.png'
+import React from 'react';
+import Princi from './images/principal.png';
 
-const IndustrialAttachment = () => {
-  return (
-    <div>
-     <div className="mx-4 lg:mx-32">
+const IndustrialAttachment = () => (
+  <div>
+    <div className="mx-4 lg:mx-32">
       <h2 className="text-center text-3xl font-bold mb-4">
         INDUSTRIAL ATTACHMENT
       </h2>
 
       <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
-          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
-        </div>
+        <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+      </div>
 
       <p className="pt-3">
         In Mwala Technical and Vocational College(MTVC)industrial attachments
@@ -35,7 +34,9 @@ const IndustrialAttachment = () => {
         <li>Attachees are given advice on the areas of specialization and code of conduct</li>
       </ul>
 
-      <p className="pt-3"><span className='italic font-bold'>Our Aim : </span>Being a workplace of excellence and technological attachment.It monitors
+      <p className="pt-3">
+        <span className="italic font-bold">Our Aim : </span>
+        Being a workplace of excellence and technological attachment.It monitors
         the progress of our trainees to improve on the quality of teaching and learning
         experience and avail role models for our trainees.
       </p>
@@ -47,20 +48,19 @@ const IndustrialAttachment = () => {
     </div>
 
     <div className="text-center bg-[#06294D] text-[white] p-4">
-        <div className="text-xs">
-          <span>Terms Of Use | </span>
-          <span>Legal Notice | </span>
-          <span>Website feedback</span>
-        </div>
-
-        <div className="text-xs">
-          <span>
-            2023 Mwala Technical & Vocation College. All Rights Reserved
-          </span>
-        </div>
+      <div className="text-xs">
+        <span>Terms Of Use | </span>
+        <span>Legal Notice | </span>
+        <span>Website feedback</span>
       </div>
-   </div>
-  )
-}
 
-export default IndustrialAttachment
+      <div className="text-xs">
+        <span>
+          2023 Mwala Technical & Vocation College. All Rights Reserved
+        </span>
+      </div>
+    </div>
+  </div>
+);
+
+export default IndustrialAttachment;

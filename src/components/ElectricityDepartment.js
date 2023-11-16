@@ -1,17 +1,16 @@
-import React from 'react'
-import Princi from '../components/images/elec.jpg'
+import React from 'react';
+import Princi from './images/elec.jpg';
 
-const ElectricityDepartment = () => {
-  return (
-    <div>
-     <div className="mx-4 lg:mx-32">
+const ElectricityDepartment = () => (
+  <div>
+    <div className="mx-4 lg:mx-32">
       <h2 className="text-center text-3xl font-bold mb-4">
-      ELECTRICAL AND ELECTRONIC ENGINEERING DEPARTMENT
+        ELECTRICAL AND ELECTRONIC ENGINEERING DEPARTMENT
       </h2>
 
       <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
-          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
-        </div>
+        <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+      </div>
 
       <h4 className="italic font-bold pt-3">Head of Department</h4>
 
@@ -51,8 +50,6 @@ const ElectricityDepartment = () => {
         <li>NITA Grade III Welding and Fabrication.</li>
       </ul>
 
-
-
       <h4 className="italic pt-3 font-bold">Electrical and Electronic Engineering Section:</h4>
       <p>Our Electrical and Electronic Engineering Section offers a wide range of programs designed to equip students with the knowledge and skills necessary to excel in the rapidly evolving field of electrical and electronic technology. From power systems to telecommunications, our programs cover it all.</p>
 
@@ -64,11 +61,20 @@ const ElectricityDepartment = () => {
 
       <h4 className="italic pt-3 font-bold">Mechanical Engineering Section:</h4>
       <ul className="list-disc pl-10">
-        <li><span className='font-bold'>Qualified Faculty:</span>Our dedicated faculty members have extensive technical and academic expertise, ensuring that students receive the highest quality education.</li>
-        <li><span className='font-bold'>Industry Partnerships: </span>We collaborate with industry leaders to ensure that our programs are aligned with current industry trends and demands.</li>
-        <li><span className='font-bold'>Supportive Community:</span>At Mwala Technical and Vocational College we foster a supportive and inclusive community where students can thrive academically and personally.</li>
+        <li>
+          <span className="font-bold">Qualified Faculty:</span>
+          Our dedicated faculty members have extensive technical and academic expertise, ensuring that students receive the highest quality education.
+        </li>
+        <li>
+          <span className="font-bold">Industry Partnerships: </span>
+          We collaborate with industry leaders to ensure that our programs are aligned with current industry trends and demands.
+        </li>
+        <li>
+          <span className="font-bold">Supportive Community:</span>
+          At Mwala Technical and Vocational College we foster a supportive and inclusive community where students can thrive academically and personally.
+        </li>
 
-        <p className='py-3'>Whether you aspire to become a skilled electrician, an electronics expert, a medical equipment technician, or a mechanical engineer, our department has the programs and resources to help you achieve your goals. We look forward to welcoming you to our department and helping you embark on a successful engineering career.</p>
+        <p className="py-3">Whether you aspire to become a skilled electrician, an electronics expert, a medical equipment technician, or a mechanical engineer, our department has the programs and resources to help you achieve your goals. We look forward to welcoming you to our department and helping you embark on a successful engineering career.</p>
         <p>If you have any questions or would like to learn more about our programs, please do not hesitate to contact us. We are here to support your educational journey.</p>
       </ul>
 
@@ -79,20 +85,19 @@ const ElectricityDepartment = () => {
     </div>
 
     <div className="text-center bg-[#06294D] text-[white] p-4">
-        <div className="text-xs">
-          <span>Terms Of Use | </span>
-          <span>Legal Notice | </span>
-          <span>Website feedback</span>
-        </div>
-
-        <div className="text-xs">
-          <span>
-            2023 Mwala Technical & Vocation College. All Rights Reserved
-          </span>
-        </div>
+      <div className="text-xs">
+        <span>Terms Of Use | </span>
+        <span>Legal Notice | </span>
+        <span>Website feedback</span>
       </div>
-   </div>
-  )
-}
 
-export default ElectricityDepartment
+      <div className="text-xs">
+        <span>
+          2023 Mwala Technical & Vocation College. All Rights Reserved
+        </span>
+      </div>
+    </div>
+  </div>
+);
+
+export default ElectricityDepartment;

@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 // import Nav from './components/Nav/Nav';
-import Top from "./components/Top";
-import { Routes, Route } from "react-router-dom";
-import AppliedSciences from "./components/AppliedSciences";
-import Outlet from "./components/Outlet";
-import IndustrialAttachment from "./components/IndustrialAttachment";
-import QualityAssuarance from "./components/QualityAssuarance";
-import FinanceDepartment from "./components/FinanceDepartment";
-import ExamDepartment from "./components/ExamDepartment";
-import PerformanceContracting from "./components/PerformanceContracting";
-import DeanStudents from "./components/DeanStudents";
-import DeputyPrincipal from "./components/DeputyPrincipal";
-import Principal from "./components/Principal";
-import ElectricityDepartment from "./components/ElectricityDepartment";
-import NavBar from "./components/NavBar";
+import { Routes, Route } from 'react-router-dom';
+import Top from './components/Top';
+import AppliedSciences from './components/AppliedSciences';
+import Outlet from './components/Outlet';
+import IndustrialAttachment from './components/IndustrialAttachment';
+import QualityAssuarance from './components/QualityAssuarance';
+import FinanceDepartment from './components/FinanceDepartment';
+import ExamDepartment from './components/ExamDepartment';
+import PerformanceContracting from './components/PerformanceContracting';
+import DeanStudents from './components/DeanStudents';
+import DeputyPrincipal from './components/DeputyPrincipal';
+import Principal from './components/Principal';
+import ElectricityDepartment from './components/ElectricityDepartment';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <Top />
       {/* <Nav /> */}
       <NavBar />
-      
+
       <Routes>
         <Route path="/" element={<Outlet />} />
         <Route path="/applied-sciences" element={<AppliedSciences />} />
@@ -36,10 +36,17 @@ function App() {
         <Route path="/Electricity&Electronic-Department" element={<ElectricityDepartment />} />
       </Routes>
 
-      <div class="whats-float">
-        <a href="/"
-          target="_blank">
-          <i class="fa fa-whatsapp"></i><span>WhatsApp<br /><small>+254 796536524</small></span>
+      <div className="whats-float">
+        <a
+          href="/"
+          target="_blank"
+        >
+          <i className="fa fa-whatsapp" />
+          <span>
+            WhatsApp
+            <br />
+            <small>+254 796536524</small>
+          </span>
         </a>
       </div>
 

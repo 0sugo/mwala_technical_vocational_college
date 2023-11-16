@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import guarantee from './images/guarantee.svg';
 import project_work from './images/project_work.svg';
 import syllabus from './images/syllabus.svg';
@@ -8,7 +8,7 @@ const FindCourse = () => {
 
   const handLevelChange = (e) => {
     setLevel(e.target.value);
-  }
+  };
 
   const diploma = ['Diploma in Electrical & Electronics Engineering (Power) Mod. 1, 2, 3',
     'Diploma in Civil Engineering - Module 1, 2 and 3',
@@ -62,47 +62,47 @@ const FindCourse = () => {
     'Certified Public Accounts-Final'];
 
   return (
-    <div className='mx-4 md:mx-12 lg:mx-36'>
-      <div className='flex flex-col mb-4'>
-        <p className=' overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold'>
+    <div className="mx-4 md:mx-12 lg:mx-36">
+      <div className="flex flex-col mb-4">
+        <p className=" overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold">
           Study at Mwala
-          <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black"></span>
+          <span className="absolute bottom-0 left-0 w-1/5 h-1  bg-black" />
         </p>
       </div>
 
-      <p className='greyer md:text-lg'>
+      <p className="greyer md:text-lg">
         The Mwala Technical and Vocational College(MTVC) offers quality
         education in various courses together with industrial attachment in
         all syllabus as required by the curriculum as an intergral part of
         training.
       </p>
 
-      <div className='flex justify-between items-center gap-3'>
-        <div className='flex items-center mt-8 md:text-lg lg:w-1/3'>
-          <img src={guarantee} alt='guarantee' className='w-16 mr-3' />
+      <div className="flex justify-between items-center gap-3">
+        <div className="flex items-center mt-8 md:text-lg lg:w-1/3">
+          <img src={guarantee} alt="guarantee" className="w-16 mr-3" />
           <p>Guarantee attachment and insuarance cover</p>
         </div>
 
-        <hr className='w-full my-2 border-black lg:hidden' />
+        <hr className="w-full my-2 border-black lg:hidden" />
 
-        <div className='flex items-center md:text-lg lg:mt-8 lg:border-l-4 lg:border-r-4 lg:px-4 lg:border-black'>
-          <img src={project_work} alt='project_work' className='w-16 mr-3' />
+        <div className="flex items-center md:text-lg lg:mt-8 lg:border-l-4 lg:border-r-4 lg:px-4 lg:border-black">
+          <img src={project_work} alt="project_work" className="w-16 mr-3" />
           <p>Sufficient practical course work</p>
         </div>
 
-        <hr className='w-full my-2  border-black lg:hidden' />
+        <hr className="w-full my-2  border-black lg:hidden" />
 
-        <div className='flex items-center md:text-lg lg:w-1/3 lg:mt-8'>
-          <img src={syllabus} alt='syllabus' className='w-16 mr-3' />
+        <div className="flex items-center md:text-lg lg:w-1/3 lg:mt-8">
+          <img src={syllabus} alt="syllabus" className="w-16 mr-3" />
           <p>Full &on-time syllabus coverage</p>
         </div>
 
-        <hr className='w-full my-2 border-black lg:hidden' />
+        <hr className="w-full my-2 border-black lg:hidden" />
       </div>
 
       <div className="bg-[#891110] p-4 mt-8 rounded-lg lg:w-9/12 lg:mx-auto lg:pt-8 lg:mt-16">
-        <p className='text-center font-bold'>Find a course for you...</p>
-        <form className="md:text-lg" >
+        <p className="text-center font-bold">Find a course for you...</p>
+        <form className="md:text-lg">
 
           <div className="mb-4">
             <label className="text-slate-100" htmlFor="email">
@@ -145,7 +145,7 @@ const FindCourse = () => {
               ) : level === 'Certificate' ? (
                 certificate.map((cert) => <option key={cert}>{cert}</option>)
               ) : (
-                <option className='text-[#cccccc]'>Choose a level of study first . . .</option>
+                <option className="text-[#cccccc]">Choose a level of study first . . .</option>
               )}
             </select>
 
@@ -163,7 +163,7 @@ const FindCourse = () => {
       </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default FindCourse
+export default FindCourse;

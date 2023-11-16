@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
+import { FaAngleDown, FaBars } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 import logo from './logo.png';
-import { FaAngleDown, FaBars } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,10 +30,10 @@ const Nav = () => {
       }
     }
 
-    document.addEventListener("click", handleOutsideClick);
+    document.addEventListener('click', handleOutsideClick);
 
     return () => {
-      document.removeEventListener("click", handleOutsideClick);
+      document.removeEventListener('click', handleOutsideClick);
     };
   }, []);
 
@@ -52,15 +52,22 @@ const Nav = () => {
 
             <div>
               {/* <a href="/" className="judson leading-9 tracking-wider text-3xl text-[#06294D] ">Mwala Technical Vocational College</a> */}
-              <a href="/" className="judson leading-2 uppercase font-bold text-[#06294D] md:hidden"><span className="">Mwala Technical <br /> Vocational College</span></a>
+              <a href="/" className="judson leading-2 uppercase font-bold text-[#06294D] md:hidden">
+                <span className="">
+                  Mwala Technical
+                  <br />
+                  {' '}
+                  Vocational College
+                </span>
+              </a>
               <a href="/" className="judson leading-2 uppercase font-bold text-[#06294D] hidden md:block md:ml-6 text-2xl"><span className="">Mwala Technical Vocational College</span></a>
             </div>
 
-            <div className={`md:hidden cursor-pointer`} onClick={toggleMenu}>
+            <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
               <FaBars className="marooner h-6 w-6" />
             </div>
 
-            <div className={`w-full md:flex md:items-center bg-blur md:w-auto sm:bg-slate-50 md:py-4 ${isMenuOpen ? "block" : "hidden"}`}>
+            <div className={`w-full md:flex md:items-center bg-blur md:w-auto sm:bg-slate-50 md:py-4 ${isMenuOpen ? 'block' : 'hidden'}`}>
               <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 items-center">
                 <li className="transition duration-300">
                   <a className="px-3 py-2 block hover:border-[#6B2D30] md:text-lg" href="/" onClick={() => setIsMenuOpen(false)}>Home</a>
@@ -80,7 +87,9 @@ const Nav = () => {
                 <li className="relative group transition duration-300">
 
                   <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30] md:text-lg" href="#academics" onClick={toggleAcademics}>
-                    Academics <FaAngleDown className={`icon ${isAcademicsOpen ? 'rotate-180' : ''}`} />
+                    Academics
+                    {' '}
+                    <FaAngleDown className={`icon ${isAcademicsOpen ? 'rotate-180' : ''}`} />
                   </a>
                   <ul className={`w-48 space-y-2 p-4 top-10 left-0 ${isAcademicsOpen ? 'block' : 'hidden'}`}>
                     <li className="transition duration-300">
@@ -105,7 +114,9 @@ const Nav = () => {
 
                 <li className="transition duration-300">
                   <a className="px-3 py-2 flex items-center gap-1 hover:text-[#6B2D30] md:text-lg" href="#non-academics" onClick={toggleNonAcademics}>
-                    Non-Academics <FaAngleDown className={`icon ${isNonAcademicsOpen ? 'rotate-180' : ''}`} />
+                    Non-Academics
+                    {' '}
+                    <FaAngleDown className={`icon ${isNonAcademicsOpen ? 'rotate-180' : ''}`} />
                   </a>
                   <ul className={`bg-white w-48 space-y-2 p-4 top-10 left-0 ${isNonAcademicsOpen ? 'block' : 'hidden'}`}>
                     <li className="transition duration-300">
@@ -151,13 +162,9 @@ const Nav = () => {
           </nav>
         </div>
 
-
       </div>
     </main>
   );
 };
 
 export default Nav;
-
-
-

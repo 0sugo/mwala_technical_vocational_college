@@ -1,17 +1,16 @@
-import React from 'react'
-import Princi from '../components/images/qa.jpg'
+import React from 'react';
+import Princi from './images/qa.jpg';
 
-const QualityAssuarance = () => {
-  return (
-    <div>
-     <div className="mx-4 lg:mx-32">
+const QualityAssuarance = () => (
+  <div>
+    <div className="mx-4 lg:mx-32">
       <h2 className="text-center text-3xl font-bold mb-4">
         QUALITY ASSUARANCE
       </h2>
 
       <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
-          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
-        </div>
+        <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+      </div>
       <p className="pt-3">
         Quality Assurance (QA) and enhancement are core aspects of the life of tertiary education institutions.
         The key element of QA and enhancement in most higher education systems is the improvement of the student experience.
@@ -48,20 +47,19 @@ const QualityAssuarance = () => {
     </div>
 
     <div className="text-center bg-[#06294D] text-[white] p-4">
-        <div className="text-xs">
-          <span>Terms Of Use | </span>
-          <span>Legal Notice | </span>
-          <span>Website feedback</span>
-        </div>
-
-        <div className="text-xs">
-          <span>
-            2023 Mwala Technical & Vocation College. All Rights Reserved
-          </span>
-        </div>
+      <div className="text-xs">
+        <span>Terms Of Use | </span>
+        <span>Legal Notice | </span>
+        <span>Website feedback</span>
       </div>
-   </div>
-  )
-}
 
-export default QualityAssuarance
+      <div className="text-xs">
+        <span>
+          2023 Mwala Technical & Vocation College. All Rights Reserved
+        </span>
+      </div>
+    </div>
+  </div>
+);
+
+export default QualityAssuarance;

@@ -1,26 +1,24 @@
-import React from 'react'
-import Princi from '../components/images/depPri.jpg'
+import React from 'react';
+import Princi from './images/depPri.jpg';
 
-const DeputyPrincipal = () => {
-  return (
-    <div>
-     <div className="mx-4 lg:mx-32">
+const DeputyPrincipal = () => (
+  <div>
+    <div className="mx-4 lg:mx-32">
       <h2 className="text-center text-3xl font-bold mb-4">
         DEPUTY PRINCIPAL
       </h2>
 
       <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
-          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
-        </div>
+        <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+      </div>
 
       <p className="pt-3">
         The Office is responsible for assisting the principal in day-to-day management of the institution including the planning and overseeing the daily timetable of the classes.
 
       </p>
 
-
       <p className="pt-3">
-        {" "}
+        {' '}
         The office is also involved in other major activities which include:
       </p>
 
@@ -36,26 +34,23 @@ const DeputyPrincipal = () => {
         <li>The office is responsible for coordinating the development and implementation of the Institute Strategic Plan with regard to academic programs towards achievement of the intended short and long-term goals.</li>
       </ul>
 
-
-
       <hr className="m-2" />
     </div>
 
     <div className="text-center bg-[#06294D] text-[white] p-4">
-        <div className="text-xs">
-          <span>Terms Of Use | </span>
-          <span>Legal Notice | </span>
-          <span>Website feedback</span>
-        </div>
-
-        <div className="text-xs">
-          <span>
-            2023 Mwala Technical & Vocation College. All Rights Reserved
-          </span>
-        </div>
+      <div className="text-xs">
+        <span>Terms Of Use | </span>
+        <span>Legal Notice | </span>
+        <span>Website feedback</span>
       </div>
-   </div>
-  )
-}
 
-export default DeputyPrincipal
+      <div className="text-xs">
+        <span>
+          2023 Mwala Technical & Vocation College. All Rights Reserved
+        </span>
+      </div>
+    </div>
+  </div>
+);
+
+export default DeputyPrincipal;

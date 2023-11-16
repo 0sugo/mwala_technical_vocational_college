@@ -4,41 +4,41 @@ import about2 from './images/about2.jpg';
 
 const About = () => {
   useEffect(() => {
-    const slidesContainer = document.querySelector(".slides-container");
-    const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
+    const slidesContainer = document.querySelector('.slides-container');
+    const slideWidth = slidesContainer.querySelector('.slide').clientWidth;
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
 
-    nextButton.addEventListener("click", () => {
+    nextButton.addEventListener('click', () => {
       slidesContainer.scrollLeft += slideWidth;
     });
 
-    prevButton.addEventListener("click", () => {
+    prevButton.addEventListener('click', () => {
       slidesContainer.scrollLeft -= slideWidth;
     });
   }, []);
 
   return (
-    <div className='mx-4 pt-14 md:mx-12 lg:mx-36' id='about'>
-      <div className='flex flex-col mb-4'>
-        <h2 className='overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold'>
+    <div className="mx-4 pt-14 md:mx-12 lg:mx-36" id="about">
+      <div className="flex flex-col mb-4">
+        <h2 className="overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold">
           About us
-          <span className="absolute bottom-0 left-0 w-1/5 h-1 md:w-1/12 bg-black"></span>
+          <span className="absolute bottom-0 left-0 w-1/5 h-1 md:w-1/12 bg-black" />
         </h2>
       </div>
 
-      <div className='flex flex-col-reverse '>
-        <div className='flex justify-center my-3 md:hidden'>
-          <img src={about1} alt='about pic' className='rounded-lg' />
+      <div className="flex flex-col-reverse ">
+        <div className="flex justify-center my-3 md:hidden">
+          <img src={about1} alt="about pic" className="rounded-lg" />
         </div>
-        <p className='text-[#5a5a5a] md:text-lg'>We are middle college situated 28 kilometers East of Machakos Town. Our college is specializing in training courses in Technical and business. Our students are trained with mind to fulfill employability challenge of the 21st century.</p>
+        <p className="text-[#5a5a5a] md:text-lg">We are middle college situated 28 kilometers East of Machakos Town. Our college is specializing in training courses in Technical and business. Our students are trained with mind to fulfill employability challenge of the 21st century.</p>
       </div>
 
-      <div className='flex  flex-col-reverse my-4'>
-        <div className='flex justify-center my-3 md:hidden'>
-          <img src={about2} alt='about pic' className='rounded-lg' />
+      <div className="flex  flex-col-reverse my-4">
+        <div className="flex justify-center my-3 md:hidden">
+          <img src={about2} alt="about pic" className="rounded-lg" />
         </div>
-        <p className='text-[#5a5a5a] md:text-lg'>At Mwala Technical Vocational College, we are dedicated to fostering a holistic learning environment that goes beyond academic excellence. Our state-of-the-art facilities and vibrant campus life offer students a rich tapestry of experiences. We encourage extracurricular activities, clubs, and community engagement to nurture a well-rounded development. The emphasis is not only on academic success but also on character building, leadership skills, and a sense of social responsibility. Our commitment to providing a comprehensive education extends beyond the classroom, ensuring that students graduate not only with knowledge and skills but also with a sense of purpose and a readiness to contribute positively to society.</p>
+        <p className="text-[#5a5a5a] md:text-lg">At Mwala Technical Vocational College, we are dedicated to fostering a holistic learning environment that goes beyond academic excellence. Our state-of-the-art facilities and vibrant campus life offer students a rich tapestry of experiences. We encourage extracurricular activities, clubs, and community engagement to nurture a well-rounded development. The emphasis is not only on academic success but also on character building, leadership skills, and a sense of social responsibility. Our commitment to providing a comprehensive education extends beyond the classroom, ensuring that students graduate not only with knowledge and skills but also with a sense of purpose and a readiness to contribute positively to society.</p>
       </div>
 
       <div className="relative">

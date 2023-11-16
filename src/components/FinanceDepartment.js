@@ -1,17 +1,16 @@
-import React from 'react'
-import Princi from '../components/images/finance.jpg'
+import React from 'react';
+import Princi from './images/finance.jpg';
 
-const FinanceDepartment = () => {
-  return (
-    <div>
-     <div className="mx-4 lg:mx-32">
+const FinanceDepartment = () => (
+  <div>
+    <div className="mx-4 lg:mx-32">
       <h2 className="text-center text-3xl font-bold mb-4">
         FINANCE DEPARTMENT
       </h2>
 
       <div className="relative rounded-full overflow-hidden w-64 h-64 mx-auto mb-4">
-          <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
-        </div>
+        <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
+      </div>
 
       <p className="pt-3">
         Finance department in Mwala Technical and Vocational College forms part of the integral management team. The department play critical role in sourcing, and sound financial management aimed at getting the best out of the college’s service delivery.
@@ -37,20 +36,19 @@ const FinanceDepartment = () => {
     </div>
 
     <div className="text-center bg-[#06294D] text-[white] p-4">
-        <div className="text-xs">
-          <span>Terms Of Use | </span>
-          <span>Legal Notice | </span>
-          <span>Website feedback</span>
-        </div>
-
-        <div className="text-xs">
-          <span>
-            2023 Mwala Technical & Vocation College. All Rights Reserved
-          </span>
-        </div>
+      <div className="text-xs">
+        <span>Terms Of Use | </span>
+        <span>Legal Notice | </span>
+        <span>Website feedback</span>
       </div>
-   </div>
-  )
-}
 
-export default FinanceDepartment
+      <div className="text-xs">
+        <span>
+          2023 Mwala Technical & Vocation College. All Rights Reserved
+        </span>
+      </div>
+    </div>
+  </div>
+);
+
+export default FinanceDepartment;
