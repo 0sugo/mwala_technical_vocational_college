@@ -9,8 +9,8 @@ const NavBar = () => {
 
   return (
     <div div className="sticky top-0 backdrop-blur z-10 ">
-      <div className="marquee bg-[#6B2D30] md:pt-4">
-        <marquee className="text-white font-bold tracking-widest md:text-xl" scrollamount="10" behavior="scroll" direction="left" loop="infinite">January 2024 intake in progress... Apply now!  ||  January 2024 intake in progress... Apply now!</marquee>
+      <div className="marquee-container bg-[#6B2D30] md:pt-4">
+        <p className="marquee-text text-white font-bold tracking-widest md:text-xl" scrollamount="10" behavior="scroll" direction="left" loop="infinite">January 2024 intake in progress... Apply now!  ||  January 2024 intake in progress... Apply now!</p>
       </div>
       <div className="relative bg-white ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
