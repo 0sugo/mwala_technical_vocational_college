@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import Nav from './components/Nav/Nav';
 import { Routes, Route } from 'react-router-dom';
 import Top from './components/Top';
@@ -14,41 +14,59 @@ import DeputyPrincipal from './components/DeputyPrincipal';
 import Principal from './components/Principal';
 import ElectricityDepartment from './components/ElectricityDepartment';
 import NavBar from './components/NavBar';
+import Spinner from './components/Spinner';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an asynchronous operation (e.g., fetching data) that takes 5 seconds
+    const fetchData = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 2500));
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
   return (
     <div>
-      <Top />
-      {/* <Nav /> */}
-      <NavBar />
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <>
+          <Spinner />
+          <Top />
+          <NavBar />
 
-      <Routes>
-        <Route path="/" element={<Outlet />} />
-        <Route path="/applied-sciences" element={<AppliedSciences />} />
-        <Route path="/Industrial-Attachment" element={<IndustrialAttachment />} />
-        <Route path="/Principal" element={<Principal />} />
-        <Route path="/Deputy-Principal" element={<DeputyPrincipal />} />
-        <Route path="/Dean-of-Students" element={<DeanStudents />} />
-        <Route path="/Performance-Contracting" element={<PerformanceContracting />} />
-        <Route path="/Exam-Department" element={<ExamDepartment />} />
-        <Route path="/Finance-Department" element={<FinanceDepartment />} />
-        <Route path="/Quality-Assuarance" element={<QualityAssuarance />} />
-        <Route path="/Electricity&Electronic-Department" element={<ElectricityDepartment />} />
-      </Routes>
+          <Routes>
+            <Route path="/" element={<Outlet />} />
+            <Route path="/applied-sciences" element={<AppliedSciences />} />
+            <Route path="/Industrial-Attachment" element={<IndustrialAttachment />} />
+            <Route path="/Principal" element={<Principal />} />
+            <Route path="/Deputy-Principal" element={<DeputyPrincipal />} />
+            <Route path="/Dean-of-Students" element={<DeanStudents />} />
+            <Route path="/Performance-Contracting" element={<PerformanceContracting />} />
+            <Route path="/Exam-Department" element={<ExamDepartment />} />
+            <Route path="/Finance-Department" element={<FinanceDepartment />} />
+            <Route path="/Quality-Assuarance" element={<QualityAssuarance />} />
+            <Route path="/Electricity&Electronic-Department" element={<ElectricityDepartment />} />
+          </Routes>
 
-      <div className="whats-float">
-        <a
-          href="/"
-          target="_blank"
-        >
-          <i className="fa fa-whatsapp" />
-          <span>
-            WhatsApp
-            <br />
-            <small>+254 796536524</small>
-          </span>
-        </a>
-      </div>
+          <div className="whats-float">
+            <a
+              href="/"
+              target="_blank"
+            >
+              <i className="fa fa-whatsapp" />
+              <span>
+                WhatsApp
+                <br />
+                <small>+254 796536524</small>
+              </span>
+            </a>
+          </div>
+        </>
+      )}
 
     </div>
   );
