@@ -1,9 +1,10 @@
 import React from 'react';
 import Princi from './images/elec.jpg';
+import 'animate.css';
 
 const ElectricityDepartment = () => (
   <div>
-    <div className="mx-4 lg:mx-32">
+    <div className="mx-4 lg:mx-32 animate__animated animate__zoomIn">
       <h2 className="text-center text-3xl font-bold mb-4">
         ELECTRICAL AND ELECTRONIC ENGINEERING DEPARTMENT
       </h2>

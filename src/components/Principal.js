@@ -1,9 +1,10 @@
 import React from 'react';
 import Princi from './images/principal.png';
+import 'animate.css';
 
 const Principal = () => (
   <div>
-    <div className="mx-4 lg:mx-32">
+    <div className="mx-4 lg:mx-32 animate__animated animate__zoomIn">
 
       <h2 className="text-center text-3xl font-bold mb-4">
         Principal
@@ -15,7 +16,7 @@ const Principal = () => (
         <img src={Princi} alt="Principal" className="object-cover w-full h-full" />
       </div>
 
-      <p className="pt-3">
+      <p className="pt-3 ">
         Kavita C. Kyuli is the 1st Principal of the Mwala Technical &
         Vocational College in Machakos County, Kenya. Kavita C.
         Kyuli holds a Master of Science Degree in Human Resource
@@ -27,7 +28,7 @@ const Principal = () => (
         Agriculture and Technology (JKUAT).
       </p>
 
-      <p className="pt-3">
+      <p className="pt-3 ">
         Kavita C. Kyuli joined the Mwala Technical & Vocational College as Principal on 17th September
         2020. He is an Agriculturist by training with vast experience in training, mentorship, leadership,
         and management having worked in various academic and administrative roles in Kenya. He is the
@@ -38,13 +39,13 @@ const Principal = () => (
         Chairperson for Resource Mobilization, Partnerships and Marketing, Northern region.
       </p>
 
-      <p className="pt-3">
+      <p className="pt-3 ">
         As an academician, he is credited for publishing over nine (9) journals which are recognized
         regionally and beyond. He has managed to teach, supervise and mentor Undergraduate and
         Diploma students. He has also served as a reviewer of articles for several Scientific Journals and
         he is a member of several editorial boards.
       </p>
-      <p className="pt-3">
+      <p className="pt-3 ">
         Under his leadership, he has managed to transform the Mwala Technical & Vocational College
         into a Premier Technical Training Institution recognized through our Niche in Engineering, ICT,
         Business, Agriculture, Applied Sciences, Hospitality and Institutional Management. He has
@@ -55,7 +56,7 @@ const Principal = () => (
         the additional revenue sources for purposes of aiding College key development agenda.
       </p>
 
-      <p className="pt-3">
+      <p className="pt-3 ">
         Kavita C. Kyuli is the 1
         st Principal of the Mwala Technical &
         Vocational College in Machakos County, Kenya. Kavita C.
@@ -68,7 +69,7 @@ const Principal = () => (
         Agriculture and Technology (JKUAT).
       </p>
 
-      <p className="pt-3">
+      <p className="pt-3 ">
         In the fullness of time, he has accumulated a vast wealth of administrative experience, honed his
         skills in human resources management, industrial labour peace, development economics,
         innovations management, reward management, resource mobilization, human capital
@@ -78,7 +79,7 @@ const Principal = () => (
         institutions of higher learning.
       </p>
 
-      <p className="pt-3">
+      <p className="pt-3 ">
         {' '}
         Prior to his appointment as the Principal of Mwala Technical & Vocational College, he served as
         the Deputy Principal in charge of Academics and Administration at Katine Technical Training
@@ -86,7 +87,7 @@ const Principal = () => (
         valley Institute of Science and Technology and Dean of Curriculum at Narok Teachers College.
       </p>
 
-      <p className="pt-3">
+      <p className="pt-3 ">
         In this regard, he has exhibited remarkable gift in people management, eye for detail and possesses
         exemplary skills in financial management, networking, fundraising and resource mobilization. It
         is for this reason that he has been elected as the Chairman of Resource Mobilization, Marketing &

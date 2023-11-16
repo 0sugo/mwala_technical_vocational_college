@@ -83,8 +83,8 @@ const NavBar = () => {
                   "
                   // onClick={() => (setFlyer(!flyer), setFlyerTwo(false))}
                   onClick={() => {
-                    setFlyerTwo(!flyerTwo);
-                    setFlyer(false);
+                    setFlyer(!flyer);
+                    setFlyerTwo(false);
                   }}
 
                 >

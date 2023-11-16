@@ -1,9 +1,10 @@
 import React from 'react';
 import Princi from './images/qa.jpg';
+import 'animate.css';
 
 const QualityAssuarance = () => (
   <div>
-    <div className="mx-4 lg:mx-32">
+    <div className="mx-4 lg:mx-32 animate__animated animate__zoomIn">
       <h2 className="text-center text-3xl font-bold mb-4">
         QUALITY ASSUARANCE
       </h2>
