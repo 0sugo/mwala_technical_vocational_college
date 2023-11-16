@@ -40,8 +40,8 @@ const Nav = () => {
   return (
     <main className={`sticky top-0 backdrop-blur md:bg-white z-10 overflow-y-scroll scrollbar ${isMenuOpen ? 'h-screen' : ''}`} ref={navRef}>
       <div className="text-black">
-        <div className="marquee bg-[#6B2D30] md:pt-6">
-          <marquee className="text-white font-bold tracking-widest md:text-2xl">January 2024 intake in progress... Apply now!</marquee>
+        <div className="marquee-container bg-[#6B2D30] md:pt-6">
+          <p className=" marquee-text text-white font-bold tracking-widest md:text-2xl">January 2024 intake in progress... Apply now!</p>
         </div>
         <div className="container mx-auto">
           <nav className="flex flex-wrap items-center md:items-end justify-between md:justify-start md:gap-3 lg:mx-40 py-4 md:py-0 px-4 text-lg text-gray-700">
