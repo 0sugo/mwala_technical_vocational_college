@@ -19,7 +19,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="mx-4 pt-14 md:mx-12 lg:mx-36" id="about">
+    <div className="m-4 pt-14 md:mx-12 lg:mx-36" id="about">
       <div className="flex flex-col mb-4">
         <h2 className="overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold">
           About us

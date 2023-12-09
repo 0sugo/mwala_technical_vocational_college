@@ -28,7 +28,7 @@ const QuickLinks = () => {
   }, [isMdScreen]);
 
   return (
-    <div className="mx-4 pt-14 md:mx-12 lg:mx-36" id="quick">
+    <div className="m-4 md:mx-12 lg:mx-36" id="quick">
       <div className="flex flex-col mb-2">
         <h2 className="overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold">
           Quick links
@@ -37,8 +37,8 @@ const QuickLinks = () => {
       </div>
       <div className="md:flex md:gap-3">
         <details className="md:w-1/3 md-details">
-          <summary className="greyer cursor-pointer md:text-xl">Student Links</summary>
-          <div className="flex flex-col pl-8 text-[#6B2D30] md:text-lg">
+          <summary className="text-white cursor-pointer md:text-xl">Student Links</summary>
+          <div className="flex flex-col pl-8 text-[#b0696d] md:text-lg">
             <a className="hover:text-blue-800 hover:underline" href="/">Student portal</a>
             <a className="hover:text-blue-800 hover:underline" href="/">Student union</a>
             <a className="hover:text-blue-800 hover:underline" href="/">Student welfare</a>
@@ -50,8 +50,8 @@ const QuickLinks = () => {
         </details>
 
         <details className="md:w-1/3 md-details">
-          <summary className="greyer cursor-pointer md:text-xl">General school links</summary>
-          <div className="flex flex-col pl-8 text-[#6B2D30] md:text-lg">
+          <summary className="text-white cursor-pointer md:text-xl">General school links</summary>
+          <div className="flex flex-col pl-8 text-[#b0696d] md:text-lg">
             <a className="hover:text-blue-800 hover:underline" href="/">legal notice</a>
             <a className="hover:text-blue-800 hover:underline" href="/">Staff portal</a>
             <a className="hover:text-blue-800 hover:underline" href="/">Staff Vacancy</a>
@@ -66,8 +66,8 @@ const QuickLinks = () => {
         </details>
 
         <details className="md:w-1/3 md-details">
-          <summary className="greyer cursor-pointer md:text-xl">School programme</summary>
-          <div className="flex flex-col pl-8 text-[#6B2D30] md:text-lg">
+          <summary className="text-white cursor-pointer md:text-xl">School programme</summary>
+          <div className="flex flex-col pl-8 text-[#b0696d] md:text-lg">
             <a className="hover:text-blue-800 hover:underline" href="/">Our intake</a>
             <a className="hover:text-blue-800 hover:underline" href="/">School timetable</a>
             <a className="hover:text-blue-800 hover:underline" href="/">Registration form</a>
