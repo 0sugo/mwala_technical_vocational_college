@@ -46,9 +46,9 @@ const Footer = () => (
       <div className="p-4 space-y-4 md:w-1/3">
         <h4 className="text-2xl text-neutral-400"><u>Newsletter</u></h4>
         <p className="text-white">Keep up with our weekly news and updates on education. Enter your e-mail and subscribe to our newsletter.</p>
-        <form className="flex items-center">
-          <input type="email" placeholder="you@example.com" id="email" className="px-2 py-3 mb-4 border border-[#06294D] rounded-lg focus:outline-none focus:border-black w-2/3 " />
-          <button className="p-1  bg-black hover:bg-[#06294D]  hover:border-black  text-white border border-solid border-[#06294D]" type="submit">
+        <form className="flex items-center ">
+          <input type="email" placeholder="you@example.com" id="email" className="px-2 py-3 border border-[#06294D] rounded-l-lg focus:outline-none focus:border-black w-2/3 " />
+          <button className="px-2 py-3 rounded-r-lg  bg-black hover:bg-[#06294D]  hover:border-black  text-white border border-solid border-[#06294D]" type="submit">
             Sign Up!
           </button>
         </form>

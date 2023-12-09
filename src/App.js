@@ -15,6 +15,7 @@ import Principal from './components/Principal';
 import ElectricityDepartment from './components/ElectricityDepartment';
 import NavBar from './components/NavBar';
 import Spinner from './components/Spinner';
+import Gallery from './components/Gallery';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,6 +51,7 @@ function App() {
             <Route path="/Finance-Department" element={<FinanceDepartment />} />
             <Route path="/Quality-Assuarance" element={<QualityAssuarance />} />
             <Route path="/Electricity&Electronic-Department" element={<ElectricityDepartment />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
 
           <div className="whats-float">

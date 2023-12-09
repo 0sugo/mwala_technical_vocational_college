@@ -35,7 +35,7 @@ const NavBar = () => {
               <a href="/" className="judson leading-2 uppercase font-bold text-[#06294D] hidden md:block md:ml-6 text-2xl lg:hidden"><span className="">Mwala Technical Vocational College</span></a>
             </div>
 
-            <div className="-mr-2 -my-2 md:hidden">
+            <div className="mr-2 my-2 md:hidden">
               <button
                 type="button"
                 className="bg-white rounded-md p-2 inline-flex items-center justify-center text-[#6B2D30] hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -561,7 +561,7 @@ const NavBar = () => {
                 Events
               </a>
               <a
-                href="#events"
+                href="/gallery"
                 className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 Gallery
@@ -604,7 +604,7 @@ const NavBar = () => {
         <div
           className={
             open
-              ? 'opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
+              ? 'opacity-100 scale-100  ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
               : 'opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
           }
         >
@@ -686,7 +686,7 @@ const NavBar = () => {
                     </span>
                   </a>
                   <a
-                    href="#events"
+                    href="/gallery"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setOpen(!open)}
                   >
@@ -723,8 +723,8 @@ const NavBar = () => {
                 </nav>
               </div>
             </div>
-            <div className="py-6 px-5 space-y-6">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
+            <div className="py-6 px-2">
+              <div className="grid grid-cols-2 gap-4">
                 <NavLink
                   to="/Principal"
                   onClick={() => setOpen(!open)}
