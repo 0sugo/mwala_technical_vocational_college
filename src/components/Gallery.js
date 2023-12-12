@@ -21,7 +21,6 @@ import gallery19 from './images/gallery19.jpeg';
 import gallery20 from './images/gallery20.jpeg';
 import gallery21 from './images/gallery21.jpeg';
 import gallery22 from './images/gallery22.jpeg';
-import gallery23 from './images/gallery23.jpeg';
 import gallery24 from './images/gallery24.jpeg';
 
 const Gallery = () => (
@@ -131,7 +130,7 @@ const Gallery = () => (
             <img class="object-cover h-full" src={gallery22} alt="image1" />
           </div>
           <div class="md:flex flex-1 flex-col">
-            <img class="object-cover h-full" src={gallery23} alt="image1" />
+            <img class="object-cover h-full" src={gallery7} alt="image1" />
           </div>
         </div>
         <div class="flex flex-1 flex-col">
