@@ -8,7 +8,7 @@ const NavBar = () => {
   const [flyerTwo, setFlyerTwo] = React.useState(false);
 
   return (
-    <div className="sticky top-0 backdrop-blur z-10 ">
+    <div className="sticky top-0 bg-white z-10">
       <div className="marquee-container bg-[#6B2D30] md:pt-4">
         <p className="marquee-text text-white font-bold tracking-widest md:text-xl" scrollamount="10" behavior="scroll" direction="left" loop="infinite">January 2024 intake in progress... Apply now!  ||  January 2024 intake in progress... Apply now!</p>
       </div>
@@ -98,7 +98,7 @@ const NavBar = () => {
                     className={
                       flyer === true
                         ? 'transform rotate-180 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 transition ease-out duration-200'
-                        : 'transform rotate-0 transition ease-out duration-200 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500'
+                        : 'transform rotate-0  transition ease-out duration-200 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500'
                     }
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -112,16 +112,6 @@ const NavBar = () => {
                     />
                   </svg>
                 </button>
-                {/*
-                  'Solutions' flyout menu, show/hide based on flyout menu state.
-
-                  Entering: "transition ease-out duration-200"
-                    From: "opacity-0 translate-y-1"
-                    To: "opacity-100 translate-y-0"
-                  Leaving: "transition ease-in duration-150"
-                    From: "opacity-100 translate-y-0"
-                    To: "opacity-0 translate-y-1"
-                */}
 
                 <div
                   onMouseLeave={() => setFlyer(false)}
@@ -131,7 +121,13 @@ const NavBar = () => {
                       : ' opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2'
                   }
                 >
-                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-x-hidden">
+                  <div
+                    className={
+                    flyer === true
+                      ? 'rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-x-hidden'
+                      : 'hidden'
+                  }
+                  >
                     <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 overflow-x-hidden">
                       <NavLink
                         href="#"
@@ -242,11 +238,7 @@ const NavBar = () => {
 
                 >
                   <span className="md:text-lg ">Non-Academic</span>
-                  {/*
-              Heroicon name: solid/chevron-down
 
-              Item active: "text-gray-600", Item inactive: "text-gray-400"
-            */}
                   <svg
                     className={
                       flyerTwo === true
@@ -265,16 +257,7 @@ const NavBar = () => {
                     />
                   </svg>
                 </button>
-                {/*
-            'More' flyout menu, show/hide based on flyout menu state.
 
-            Entering: "transition ease-out duration-200"
-              From: "opacity-0 translate-y-1"
-              To: "opacity-100 translate-y-0"
-            Leaving: "transition ease-in duration-150"
-              From: "opacity-100 translate-y-0"
-              To: "opacity-0 translate-y-1"
-          */}
                 {' '}
                 <div
                   onMouseLeave={() => setFlyerTwo(false)}
@@ -284,7 +267,13 @@ const NavBar = () => {
                       : ' opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2'
                   }
                 >
-                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-x-hidden overflow-y-scroll lg:max-h-[80vh] whitespace-normal">
+                  <div
+                    className={
+                    flyerTwo === true
+                      ? 'rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-x-hidden overflow-y-scroll lg:max-h-[80vh] whitespace-normal'
+                      : 'hidden'
+                  }
+                  >
                     <div className="relative grid gap-4 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                       <NavLink
                         href="#"
@@ -505,61 +494,10 @@ const NavBar = () => {
                       </NavLink>
 
                     </div>
-                    {/* <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
-                      <div>
-                        <h3 className="text-sm tracking-wide font-medium text-gray-500 uppercase">
-                          Recent Posts
-                        </h3>
-                        <ul className="mt-4 space-y-4">
-                          <li className="text-base truncate">
-                            <a
-                              href="/"
-                              className="font-medium text-gray-900 hover:text-gray-700"
-                            >
-                              Boost your conversion rate
-                            </a>
-                          </li>
-                          <li className="text-base truncate">
-                            <a
-                              href="/"
-                              className="font-medium text-gray-900 hover:text-gray-700"
-                            >
-                              How to use search engine optimization to drive
-                              traffic to your site
-                            </a>
-                          </li>
-                          <li className="text-base truncate">
-                            <a
-                              href="/"
-                              className="font-medium text-gray-900 hover:text-gray-700"
-                            >
-                              Improve your customer experience
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="mt-5 text-sm">
-                        <a
-                          href="/"
-                          className="font-medium text-indigo-600 hover:text-indigo-500"
-                        >
-                          {' '}
-                          View all posts
-                          {' '}
-                          <span aria-hidden="true">→</span>
-                        </a>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
 
-              <a
-                href="#events"
-                className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
-              >
-                Events
-              </a>
               <a
                 href="/gallery"
                 className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
@@ -568,7 +506,7 @@ const NavBar = () => {
               </a>
 
               <a
-                href="#quick"
+                href="/#quick"
                 className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 Links
@@ -604,11 +542,17 @@ const NavBar = () => {
         <div
           className={
             open
-              ? 'opacity-100 scale-100  ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
+              ? 'opacity-100 scale-100 ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10 bg-opacity-50 backdrop-filter backdrop-blur-lg'
               : 'opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
           }
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+          <div
+            className={
+            open
+              ? 'rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50'
+              : 'hidden'
+          }
+          >
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
@@ -672,27 +616,13 @@ const NavBar = () => {
                     </span>
                   </a>
                   <a
-                    href="#events"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setOpen(!open)}
-                  >
-                    {/* Heroicon name: outline/shield-check */}
-                    <svg className="flex-shrink-0 h-6 w-6 text-[#6B2D30]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-                    </svg>
-
-                    <span className="ml-3 text-base font-medium text-gray-900">
-                      Events
-                    </span>
-                  </a>
-                  <a
                     href="/gallery"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setOpen(!open)}
                   >
                     {/* Heroicon name: outline/shield-check */}
-                    <svg className="flex-shrink-0 h-6 w-6 text-[#6B2D30]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                    <svg className="flex-shrink-0 h-6 w-6 text-[#6B2D30]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                     </svg>
 
                     <span className="ml-3 text-base font-medium text-gray-900">
@@ -700,7 +630,7 @@ const NavBar = () => {
                     </span>
                   </a>
                   <a
-                    href="#quick"
+                    href="/#quick"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setOpen(!open)}
                   >
