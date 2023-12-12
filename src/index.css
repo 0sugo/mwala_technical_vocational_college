@@ -107,9 +107,10 @@ body::-webkit-scrollbar-thumb {
 
 .slider-item {
   --total-gap: calc(var(--item-gap) * (var(--slider-items) - 1));
-  --item-width: calc(
-    (100% / var(--slider-items)) - (var(--total-gap) / var(--slider-items))
-  );
+  --item-width:
+    calc(
+      (100% / var(--slider-items)) - (var(--total-gap) / var(--slider-items))
+    );
 
   min-width: var(--item-width);
   width: var(--item-width);
@@ -163,7 +164,7 @@ body::-webkit-scrollbar-thumb {
   transition: var(--transition-2);
 }
 
-.service-card .card-icon ion-icon {
+.service-card .card-icon {
   color: var(--content-color, var(--raisin-black));
   font-size: 6rem;
 
@@ -208,7 +209,8 @@ body::-webkit-scrollbar-thumb {
 /* Animation on stats */
 .antialiased {
   /* background: #2980b9 url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKQJAhanR0X-dQ0gFNhDNDEAqt-Z4F7ye7A&usqp=CAU') repeat 0 0; */
-  background: #2980b9
+  background:
+    #2980b9
     url("https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdoaXRlJTIwZ3JleXxlbnwwfHwwfHx8MA%3D%3D")
     repeat 0 0;
 
@@ -224,6 +226,7 @@ body::-webkit-scrollbar-thumb {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 500px 0;
   }
@@ -233,6 +236,7 @@ body::-webkit-scrollbar-thumb {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 500px 0;
   }
@@ -242,6 +246,7 @@ body::-webkit-scrollbar-thumb {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 500px 0;
   }
@@ -251,6 +256,7 @@ body::-webkit-scrollbar-thumb {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 500px 0;
   }
@@ -260,6 +266,7 @@ body::-webkit-scrollbar-thumb {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 500px 0;
   }
@@ -343,9 +350,11 @@ body::-webkit-scrollbar-thumb {
   0% {
     transform: translateY(-200%) scale(1);
   }
+
   50% {
     transform: translateY(50%) scale(1.2);
   }
+
   100% {
     transform: translateY(0) scale(1);
   }
@@ -359,13 +368,15 @@ body::-webkit-scrollbar-thumb {
   animation: slideAndZoom 2.5s ease-in-out;
 }
 
-/*Gallary category images*/
-.zoom:hover img {
-  transform: scale(1.1);
-}
+/* Gallary category images */
 .zoom img {
   background-position: 50%;
 }
+
+.zoom:hover img {
+  transform: scale(1.1);
+}
+
 .mask {
   background-color: rgba(0, 0, 0, 0.3);
 }
