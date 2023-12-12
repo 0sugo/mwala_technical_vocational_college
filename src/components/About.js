@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 // import about1 from './images/about1.jpg';
 import about2 from './images/about2.jpg';
 import gallery1 from './images/gallery1.jpeg';
@@ -168,7 +169,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex items-center justify-center my-10">
-        <span className="bg-[#6B2D30] text-white px-5 py-2.5 rounded-md hover:bg-[#635959]"><a href="/Gallery">Full Gallery</a></span>
+        <span className="bg-[#6B2D30] text-white px-5 py-2.5 rounded-md hover:bg-[#635959]"><NavLink href="#" to="/gallery">Full Gallery</NavLink></span>
       </div>
     </div>
   );
