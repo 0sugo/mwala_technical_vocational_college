@@ -38,7 +38,7 @@ const NavBar = () => {
             <div className="mr-2 my-2 md:hidden">
               <button
                 type="button"
-                className="bg-white rounded-md p-2 inline-flex items-center justify-center text-[#6B2D30] hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                className="bg-white rounded-md p-2 inline-flex items-center justify-center text-[#6B2D30] hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#06294D]"
                 onClick={() => setOpen(!open)}
               >
                 <span className="sr-only">Open menu</span>
@@ -79,7 +79,7 @@ const NavBar = () => {
                 <button
                   type="button"
                   className="
-                   group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 pb-8'
+                   group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#06294D] pb-8'
                   "
                   // onClick={() => (setFlyer(!flyer), setFlyerTwo(false))}
                   onClick={() => {
@@ -130,13 +130,12 @@ const NavBar = () => {
                   >
                     <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 overflow-x-hidden">
                       <NavLink
-                        href="#"
                         to="/applied-sciences"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/chart-bar */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -160,13 +159,12 @@ const NavBar = () => {
                         </div>
                       </NavLink>
                       <NavLink
-                        href="#"
                         to="/Electricity&Electronic-Department"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/cursor-click */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -190,13 +188,12 @@ const NavBar = () => {
                         </div>
                       </NavLink>
                       <NavLink
-                        href="#"
                         to="/Industrial-Attachment"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/shield-check */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -229,7 +226,7 @@ const NavBar = () => {
                 {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
                 <button
                   type="button"
-                  className="group bg-white rounded-md text-gray-500 inline-flex md:max-w-fit items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="group bg-white rounded-md text-gray-500 inline-flex md:max-w-fit items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#06294D]"
                   // onClick={() => (setFlyerTwo(!flyerTwo), setFlyer(false))}
                   onClick={() => {
                     setFlyerTwo(!flyerTwo);
@@ -276,13 +273,12 @@ const NavBar = () => {
                   >
                     <div className="relative grid gap-4 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                       <NavLink
-                        href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                         to="/Principal"
                       >
                         {/* Heroicon name: outline/support */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -308,13 +304,12 @@ const NavBar = () => {
                         </div>
                       </NavLink>
                       <NavLink
-                        href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                         to="/Deputy-Principal"
                       >
                         {/* Heroicon name: outline/bookmark-alt */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -339,13 +334,12 @@ const NavBar = () => {
                         </div>
                       </NavLink>
                       <NavLink
-                        href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                         to="/Dean-of-Students"
                       >
                         {/* Heroicon name: outline/calendar */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -372,13 +366,12 @@ const NavBar = () => {
                       </NavLink>
 
                       <NavLink
-                        href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                         to="/Exam-Department"
                       >
                         {/* Heroicon name: outline/shield-check */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -404,13 +397,12 @@ const NavBar = () => {
                       </NavLink>
 
                       <NavLink
-                        href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                         to="/Finance-Department"
                       >
                         {/* Heroicon name: outline/shield-check */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -435,13 +427,12 @@ const NavBar = () => {
                       </NavLink>
 
                       <NavLink
-                        href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                         to="/Quality-Assuarance"
                       >
                         {/* Heroicon name: outline/shield-check */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -466,13 +457,12 @@ const NavBar = () => {
                       </NavLink>
 
                       <NavLink
-                        href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                         to="/Performance-Contracting"
                       >
                         {/* Heroicon name: outline/shield-check */}
                         <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-[#06294D]"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -499,16 +489,15 @@ const NavBar = () => {
               </div>
 
               <NavLink
-                href="#"
                 className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
-                to="/Gallery"
-
+                to="/gallery"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Gallery
               </NavLink>
 
               <a
-                href="/#quick"
+                href="#quick"
                 className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 Links
@@ -516,14 +505,12 @@ const NavBar = () => {
             </nav>
             {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a
-                href="#"
                 className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Sign in
               </a>
               <a
-                href="#"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#06294D] hover:bg-indigo-700"
               >
                 Sign up
               </a>
@@ -531,15 +518,15 @@ const NavBar = () => {
           </div>
         </div>
         {/*
-    Mobile menu, show/hide based on mobile menu state.
+          Mobile menu, show/hide based on mobile menu state.
 
-    Entering: "duration-200 ease-out"
-      From: ""
-      To: ""
-    Leaving: "duration-100 ease-in"
-      From: "opacity-100 scale-100"
-      To: "opacity-0 scale-95"
-  */}
+          Entering: "duration-200 ease-out"
+            From: ""
+            To: ""
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        */}
 
         <div
           className={
@@ -618,8 +605,7 @@ const NavBar = () => {
                     </span>
                   </a>
                   <NavLink
-                    href="#"
-                    to="/Gallery"
+                    to="/gallery"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setOpen(!open)}
                   >
@@ -733,14 +719,14 @@ const NavBar = () => {
               </div>
               {/* <div>
                 <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#06294D] hover:bg-indigo-700"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="text-[#06294D] hover:text-[#06294D]">
                     Sign in
                   </a>
                 </p>

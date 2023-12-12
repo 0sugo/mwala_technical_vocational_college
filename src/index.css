@@ -37,6 +37,14 @@ body {
   -ms-overflow-style: none;
 }
 
+/* hero image */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+}
+
 .scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -107,10 +115,9 @@ body::-webkit-scrollbar-thumb {
 
 .slider-item {
   --total-gap: calc(var(--item-gap) * (var(--slider-items) - 1));
-  --item-width:
-    calc(
-      (100% / var(--slider-items)) - (var(--total-gap) / var(--slider-items))
-    );
+  --item-width: calc(
+    (100% / var(--slider-items)) - (var(--total-gap) / var(--slider-items))
+  );
 
   min-width: var(--item-width);
   width: var(--item-width);
@@ -209,8 +216,7 @@ body::-webkit-scrollbar-thumb {
 /* Animation on stats */
 .antialiased {
   /* background: #2980b9 url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKQJAhanR0X-dQ0gFNhDNDEAqt-Z4F7ye7A&usqp=CAU') repeat 0 0; */
-  background:
-    #2980b9
+  background: #2980b9
     url("https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdoaXRlJTIwZ3JleXxlbnwwfHwwfHx8MA%3D%3D")
     repeat 0 0;
 
@@ -379,4 +385,13 @@ body::-webkit-scrollbar-thumb {
 
 .mask {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 55vh;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+  }
 }

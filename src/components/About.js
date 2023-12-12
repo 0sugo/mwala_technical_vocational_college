@@ -85,26 +85,29 @@ const About = () => {
         <p className="text-[#5a5a5a] md:text-lg">At Mwala Technical Vocational College, we are dedicated to fostering a holistic learning environment that goes beyond academic excellence. Our state-of-the-art facilities and vibrant campus life offer students a rich tapestry of experiences. We encourage extracurricular activities, clubs, and community engagement to nurture a well-rounded development. The emphasis is not only on academic success but also on character building, leadership skills, and a sense of social responsibility. Our commitment to providing a comprehensive education extends beyond the classroom, ensuring that students graduate not only with knowledge and skills but also with a sense of purpose and a readiness to contribute positively to society.</p>
       </div> */}
 
+      <div className="flex flex-col m-4 lg:mx-36">
+        <h2 className="overflow-hidden mt-14 pb-2 relative uppercase text-2xl lg:text-3xl font-bold">
+          About Us
+          <span className="absolute bottom-0 left-0 w-1/5 h-1 md:w-1/12 bg-black" />
+        </h2>
+      </div>
       <div className="lg:flex-row flex-wrap justify-center lg:gap-8 lg:my-20 md:flex sm:flex-col">
-        <div className="flex flex-col mb-4">
-          <h2 className="overflow-hidden mt-16 pb-2 relative uppercase text-2xl lg:text-3xl font-bold">
-            About Us
-            <span className="absolute bottom-0 left-0 w-1/5 h-1 md:w-1/12 bg-black" />
-          </h2>
-        </div>
-        <div className="flex justify-between p-4 md:justify-around">
-          <h5 className={`cursor-pointer text-[#06294D] ${activeSection === 'mission' ? 'text-[#891110] underline' : ''}`} onClick={handleMissionClick}><b>Mission</b></h5>
-          <h5 className={`cursor-pointer text-[#06294D] ${activeSection === 'vision' ? 'text-[#891110] underline' : ''}`} onClick={handleApproachClick}><b>Vision</b></h5>
-          <h5 className={`cursor-pointer text-[#06294D] ${activeSection === 'target' ? 'text-[#891110] underline' : ''}`} onClick={handleTargetClick}><b>Motto</b></h5>
-        </div>
-        {activeSection === 'vision' && <ApproachSection />}
-        {activeSection === 'mission' && <MissionSection />}
-        {activeSection === 'target' && <TargetSection />}
-        <div className="pt-16 md:pt-2 flex justify-center p-4">
-          <img width={528} height={500} src={about2} alt="about" />
-        </div>
         <div className="lg:w-2/5">
-
+          <div className="flex justify-between p-4 md:justify-around">
+            <h5 className={`cursor-pointer text-[#06294D] ${activeSection === 'mission' ? 'text-[#891110] underline' : ''}`} onClick={handleMissionClick}><b>Mission</b></h5>
+            <h5 className={`cursor-pointer text-[#06294D] ${activeSection === 'vision' ? 'text-[#891110] underline' : ''}`} onClick={handleApproachClick}><b>Vision</b></h5>
+            <h5 className={`cursor-pointer text-[#06294D] ${activeSection === 'target' ? 'text-[#891110] underline' : ''}`} onClick={handleTargetClick}><b>Motto</b></h5>
+          </div>
+          <div>
+            {activeSection === 'vision' && <ApproachSection />}
+            {activeSection === 'mission' && <MissionSection />}
+            {activeSection === 'target' && <TargetSection />}
+          </div>
+          <div className="pt-16 md:pt-2 flex justify-center p-4">
+            <img className="w-full" width={528} height={500} src={about2} alt="about" />
+          </div>
+        </div>
+        <div className="flex items-center justify-center lg:w-2/5">
           <div className="p-4 space-y-4 text-justify">
             <p>We are middle college situated 28 kilometers East of Machakos Town. Our college is specializing in training courses in Technical and business. Our students are trained with mind to fulfill employability challenge of the 21st century.</p>
             <p>At Mwala Technical Vocational College, we are dedicated to fostering a holistic learning environment that goes beyond academic excellence. Our state-of-the-art facilities and vibrant campus life offer students a rich tapestry of experiences. We encourage extracurricular activities, clubs, and community engagement to nurture a well-rounded development. The emphasis is not only on academic success but also on character building, leadership skills, and a sense of social responsibility. Our commitment to providing a comprehensive education extends beyond the classroom, ensuring that students graduate not only with knowledge and skills but also with a sense of purpose and a readiness to contribute positively to society.</p>
