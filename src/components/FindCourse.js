@@ -126,8 +126,8 @@ const FindCourse = () => {
       </div>
 
       <div className="bg-[#6B2D30] p-4 mt-8 rounded-lg lg:w-9/12 lg:mx-auto lg:pt-8 lg:mt-16">
-        <p className="text-center font-bold">Find a course for you...</p>
-        <form className="md:text-lg">
+        <p className="text-center font-bold text-slate-300">Find a course for you...</p>
+        <form className="md:text-lg p-4">
 
           <div className="mb-4">
             <label className="text-slate-100" htmlFor="email">
@@ -147,7 +147,7 @@ const FindCourse = () => {
               Level of study
             </label>
             <select
-              className="block w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+              className="block w-full bg-white border border-gray-300 text-[#6B2D30] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
               id="studyLevel"
               onChange={handLevelChange}
             >
@@ -162,7 +162,7 @@ const FindCourse = () => {
               Course
             </label>
             <select
-              className="block w-full bg-white border border-gray-300 text-[#891110] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+              className="block w-full bg-white border border-gray-300 text-[#6B2D30] py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
               id="course"
             >
               {level === 'Diploma' ? (
@@ -178,7 +178,7 @@ const FindCourse = () => {
 
           <div className="flex items-center justify-center">
             <button
-              className="bg-[#06294D] hover:bg-[#06294D] text-slate-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-[#06294D] hover:bg-[#070e14] text-slate-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Enquire

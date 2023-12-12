@@ -30,11 +30,18 @@ html {
 
 *,
 body {
-  /* overflow-x:hidden; */
   padding: 0;
   font-family: "Poppins", sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+/* hero image */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
 }
 
 .scrollbar {
@@ -379,4 +386,13 @@ body::-webkit-scrollbar-thumb {
 
 .mask {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 55vh;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+  }
 }

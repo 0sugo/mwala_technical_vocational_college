@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Alpine from 'alpinejs';
-import heropic from './images/heropic.jpg';
+import heropic from './images/gallery24.jpeg';
 
 const Hero = () => {
   useEffect(() => {
@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <div>
       <div>
-        <img src={heropic} alt="hero pic" className="w-screen lg:w-screen" />
+        <img src={heropic} alt="hero pic" className="hero w-full" width={1280} height={684} />
       </div>
 
       <div className="antialiased h-28 px-4 lg:h-30 flex justify-evenly space-x-16 items-center text-center text-gray-800">
