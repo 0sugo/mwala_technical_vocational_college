@@ -3,27 +3,26 @@ import Alpine from 'alpinejs';
 import heropic from './images/heropic.jpg';
 
 const Hero = () => {
-  const animation = () => ({
-    counter: 0,
-    formatNumberWithCommas(number) {
-      return number.toLocaleString();
-    },
-    animate(finalCount) {
-      const time = 1500;
-      const interval = 300;
-      const step = Math.floor(finalCount * interval / time);
-      const timer = setInterval(() => {
-        this.counter += step;
-        if (this.counter >= finalCount + step) {
-          this.counter = finalCount;
-          clearInterval(timer);
-        }
-      }, interval);
-    },
-  });
-
   useEffect(() => {
-    Alpine.data('animation', animation);
+    Alpine.data('animation', () => ({
+      counter: 0,
+      formatNumberWithCommas(number) {
+        return number.toLocaleString();
+      },
+      animate(finalCount) {
+        const time = 1500;
+        const interval = 30; // Adjusted interval for smoother animation
+        const step = Math.floor(finalCount * interval / time);
+        const timer = setInterval(() => {
+          this.counter += step;
+          if (this.counter >= finalCount + step) {
+            this.counter = finalCount;
+            clearInterval(timer);
+          }
+        }, interval);
+      },
+    }));
+
     Alpine.start();
   }, []);
 
@@ -36,7 +35,7 @@ const Hero = () => {
       <div className="antialiased h-28 px-4 lg:h-30 flex justify-evenly space-x-16 items-center text-center text-gray-800">
         <div className="w-48 flex flex-col items-center">
           <div className="flex gap-1">
-            <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-black " x-data="animation()" x-init="animate(50)" x-text="counter">
+            <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-black " x-data="animation()" x-init="animate(60)" x-text="counter">
               0
             </span>
             <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-black">+</p>
@@ -44,7 +43,7 @@ const Hero = () => {
           <p className="font-bold md:text-2xl lg:text-3xl">Courses</p>
         </div>
         <div className="w-48 flex flex-col items-center">
-          <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#06294D]" x-data="animation()" x-init="animate(6)" x-text="counter">
+          <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#06294D]" x-data="animation()" x-init="animate(3)" x-text="counter">
             0
           </span>
           <p className="font-bold md:text-2xl lg:text-3xl">Years</p>

@@ -125,7 +125,7 @@ const FindCourse = () => {
         </div>
       </div>
 
-      <div className="bg-[#891110] p-4 mt-8 rounded-lg lg:w-9/12 lg:mx-auto lg:pt-8 lg:mt-16">
+      <div className="bg-[#6B2D30] p-4 mt-8 rounded-lg lg:w-9/12 lg:mx-auto lg:pt-8 lg:mt-16">
         <p className="text-center font-bold">Find a course for you...</p>
         <form className="md:text-lg">
 
