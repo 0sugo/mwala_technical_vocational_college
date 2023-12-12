@@ -130,7 +130,7 @@ const Gallery = () => (
             <img class="object-cover h-full" src={gallery22} alt="image1" />
           </div>
           <div class="md:flex flex-1 flex-col">
-            <img class="object-cover h-full" src={gallery7} alt="image1" />
+            <img class="object-cover h-full" src={gallery21} alt="image1" />
           </div>
         </div>
         <div class="flex flex-1 flex-col">
