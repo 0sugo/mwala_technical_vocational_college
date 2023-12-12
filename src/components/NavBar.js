@@ -498,12 +498,14 @@ const NavBar = () => {
                 </div>
               </div>
 
-              <a
-                href="/gallery"
+              <NavLink
+                href="#"
                 className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
+                to="/Gallery"
+
               >
                 Gallery
-              </a>
+              </NavLink>
 
               <a
                 href="/#quick"
@@ -615,8 +617,9 @@ const NavBar = () => {
                       About
                     </span>
                   </a>
-                  <a
+                  <NavLink
                     href="/gallery"
+                    to="#"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setOpen(!open)}
                   >
@@ -628,7 +631,7 @@ const NavBar = () => {
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Gallery
                     </span>
-                  </a>
+                  </NavLink>
                   <a
                     href="/#quick"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
