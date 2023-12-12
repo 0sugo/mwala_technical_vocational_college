@@ -618,8 +618,8 @@ const NavBar = () => {
                     </span>
                   </a>
                   <NavLink
-                    href="/gallery"
-                    to="#"
+                    href="#"
+                    to="/Gallery"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setOpen(!open)}
                   >
