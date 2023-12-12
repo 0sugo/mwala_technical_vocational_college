@@ -168,7 +168,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex items-center justify-center my-10">
-        <span className="bg-[#6B2D30] text-white px-5 py-2.5 rounded-md hover:bg-[#635959]"><a href="/gallery">Full Gallery</a></span>
+        <span className="bg-[#6B2D30] text-white px-5 py-2.5 rounded-md hover:bg-[#635959]"><a href="/Gallery">Full Gallery</a></span>
       </div>
     </div>
   );
