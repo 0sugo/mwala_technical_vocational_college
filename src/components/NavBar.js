@@ -88,7 +88,7 @@ const NavBar = () => {
                   }}
 
                 >
-                  <span className="md:text-lg ">Academic</span>
+                  <span className="md:text-lg ">Academic Departments</span>
                   {/*
                   Heroicon name: solid/chevron-down
 
@@ -234,7 +234,7 @@ const NavBar = () => {
                   }}
 
                 >
-                  <span className="md:text-lg ">Non-Academic</span>
+                  <span className="md:text-lg ">Other departments</span>
 
                   <svg
                     className={
@@ -496,12 +496,12 @@ const NavBar = () => {
                 Gallery
               </NavLink>
 
-              <a
+              {/* <a
                 href="#quick"
                 className="text-base font-medium text-gray-500 hover:text-gray-900 md:text-lg "
               >
                 Links
-              </a>
+              </a> */}
             </nav>
             {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a
