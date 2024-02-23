@@ -11,7 +11,7 @@ const Hero = () => {
       },
       animate(finalCount) {
         const time = 1500;
-        const interval = 30; // Adjusted interval for smoother animation
+        const interval = 30;
         const step = Math.floor(finalCount * interval / time);
         const timer = setInterval(() => {
           this.counter += step;
