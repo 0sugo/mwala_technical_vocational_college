@@ -65,7 +65,7 @@ const Footer = () => (
       </div>
 
       <div className="text-xs">
-        <span>2023 Mwala Technical & Vocation College. All Rights Reserved</span>
+        <span>2024 Mwala Technical & Vocation College. All Rights Reserved</span>
       </div>
 
     </div>

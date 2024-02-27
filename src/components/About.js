@@ -46,13 +46,13 @@ const About = () => {
   };
 
   const ApproachSection = () => (
-    <div className="p-4 leading-7 text-center text-[#626262]">
+    <div className="p-4 leading-7 text-start text-[#626262]">
       <p>A Centre of Excellence in Technical Training for Employable Workforce. </p>
     </div>
   );
 
   const MissionSection = () => (
-    <div className="p-4 leading-7 text-justify text-[#626262]">
+    <div className="p-4 leading-7 text-start text-[#626262]">
       <p>To Produce Competent Employable Graduates by Facilitating Learning, Research and Innovative Dissemination of Knowledge, Skills and Productive Work Attitudes to Meet SocioEconomic and Cultural Needs of the Citizens of Kenya and Beyond. </p>
     </div>
   );
