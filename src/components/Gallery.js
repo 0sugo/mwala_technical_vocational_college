@@ -22,6 +22,11 @@ import gallery20 from './images/gallery20.jpeg';
 import gallery21 from './images/gallery21.jpeg';
 import gallery22 from './images/gallery22.jpeg';
 import gallery24 from './images/gallery24.jpeg';
+import gallery25 from './images/407838050_692609506347279_2225270352882545938_n.jpg';
+import gallery26 from './images/414896286_708443664763863_345668397791643857_n.jpg';
+import gallery27 from './images/414937756_708441128097450_669598783118448081_n.jpg';
+import gallery28 from './images/415794250_708494854758744_4442697700191053539_n.jpg';
+import gallery29 from './images/416833991_711255137816049_687208141840653731_n.jpg';
 
 const Gallery = () => (
   <div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 relative bg-gray-50">
@@ -135,6 +140,32 @@ const Gallery = () => (
         </div>
         <div class="flex flex-1 flex-col">
           <img class="object-cover h-full" src={gallery24} alt="image1" />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-2">
+      <div class="flex flex-1 flex-col gap-2">
+        <div class="flex flex-1 flex-col">
+          <img class="object-cover h-full" src={gallery25} alt="image1" />
+        </div>
+        <div class="md:flex flex-1 flex-row gap-2">
+          <div class="flex flex-1 flex-col">
+            <img class="object-cover h-full" src={gallery26} alt="image1" />
+          </div>
+          <div class="md:flex flex-1 flex-col">
+            <img class="object-cover h-full" src={gallery27} alt="image1" />
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col gap-2">
+        <div class="md:flex flex-1 flex-row gap-2">
+          <div class="flex flex-1 flex-col">
+            <img class="object-cover h-full" src={gallery28} alt="image1" />
+          </div>
+          <div class="md:flex flex-1 flex-col">
+            <img class="object-cover h-full" src={gallery29} alt="image1" />
+          </div>
         </div>
       </div>
     </div>
