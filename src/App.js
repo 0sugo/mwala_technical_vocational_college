@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 // import Nav from './components/Nav/Nav';
 // import Nav from './components/Nav/Nav';
 // import Nav from './components/Nav/Nav';
-// import Nav from './components/Nav/Nav';
 import { Routes, Route } from 'react-router-dom';
 import Top from './components/Top';
 import AppliedSciences from './components/AppliedSciences';
