@@ -17,7 +17,6 @@ import Spinner from './components/Spinner';
 import Gallery from './components/Gallery';
 qq
 q
-q
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
