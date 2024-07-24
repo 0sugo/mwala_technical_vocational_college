@@ -15,7 +15,39 @@ import ElectricityDepartment from './components/ElectricityDepartment';
 import NavBar from './components/NavBar';
 import Spinner from './components/Spinner';
 import Gallery from './components/Gallery';
-
+qq
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
+q
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
