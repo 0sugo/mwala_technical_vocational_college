@@ -47,7 +47,6 @@ q
 q
 q
 q
-q
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
