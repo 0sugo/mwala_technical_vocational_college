@@ -18,7 +18,6 @@ import Gallery from './components/Gallery';
 qq
 q
 q
-q
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
