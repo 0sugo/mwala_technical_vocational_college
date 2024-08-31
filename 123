@@ -1,0 +1,193 @@
+// import React from "react";
+// import { Mail, Phone } from "lucide-react";
+
+// export default function About() {
+//   return (
+//     <div className="bg-lime-500 min-h-screen flex flex-col md:flex-row p-6 gap-6">
+//       <div className="md:w-1/2 flex flex-col justify-center">
+//         <div className="bg-lime-500 rounded-lg p-6 shadow-lg">
+//           <h2 className="text-3xl font-bold mb-4 text-white">Contact Us</h2>
+//           <p className="text-lg text-white mb-6">
+//             Not sure what you need? The team at KILIMO PESA will be happy to
+//             listen to you and suggest ideas you hadn't considered.
+//           </p>
+
+//           <div className="flex items-center mb-4">
+//             <Mail className="h-6 w-6 text-white mr-2" />
+//             <a
+//               href="mailto:contact@kilimopesa.com"
+//               className="text-white hover:underline"
+//             >
+//               contact@kilimopesa.com
+//             </a>
+//           </div>
+
+//           <div className="flex items-center">
+//             <Phone className="h-6 w-6 text-white mr-2" />
+//             <a href="tel:+1234567890" className="text-white hover:underline">
+//               +123 456 7890
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div className="md:w-1/2">
+//         <div className="bg-white rounded-lg p-6 shadow-lg">
+//           <form className="space-y-4">
+//             <h1 className="text-2xl font-bold text-lime-600 mb-2">
+//               We'd love to hear from you!
+//               <span className="block text-lg font-normal text-gray-600">
+//                 Let's get in touch
+//               </span>
+//             </h1>
+
+//             <div>
+//               <label className="block text-sm font-medium text-gray-700 mb-1">
+//                 Full Name
+//               </label>
+//               <input
+//                 type="text"
+//                 placeholder="Enter your full name"
+//                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+//               />
+//             </div>
+
+//             <div>
+//               <label className="block text-sm font-medium text-gray-700 mb-1">
+//                 Email Address
+//               </label>
+//               <input
+//                 type="email"
+//                 placeholder="Enter your email address"
+//                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+//               />
+//             </div>
+
+//             <div>
+//               <label className="block text-sm font-medium text-gray-700 mb-1">
+//                 Phone Number
+//               </label>
+//               <input
+//                 type="tel"
+//                 placeholder="Enter your phone number"
+//                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+//               />
+//             </div>
+
+//             <div>
+//               <label className="block text-sm font-medium text-gray-700 mb-1">
+//                 Message
+//               </label>
+//               <textarea
+//                 placeholder="Enter your message"
+//                 rows={4}
+//                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500"
+//               ></textarea>
+//             </div>
+
+//             <button
+//               type="submit"
+//               className=" bg-lime-500 text-white font-bold py-2 px-4 rounded-md hover:bg-lime-600 transition duration-300"
+//             >
+//               Send Message
+//             </button>
+//           </form>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+import React from "react";
+import { Phone } from "lucide-react";
+
+export default function ContactPage() {
+  return (
+    <div className="flex flex-col md:flex-row h-screen bg-white">
+      {/* Left side - Form */}
+      <div className="w-full md:w-1/2 p-8">
+        <h2 className="text-2xl font-semibold mb-2">Chat to our team</h2>
+        <p className="text-gray-600 mb-6">
+          Need help with something? Want a demo? Get in touch with our friendly team and we'll get back to you within 24 hours.
+        </p>
+        
+        <form className="space-y-4">
+          <div className="flex space-x-4">
+            <input
+              type="text"
+              placeholder="First name"
+              className="w-1/2 p-2 border rounded"
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              className="w-1/2 p-2 border rounded"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Job title"
+            className="w-full p-2 border rounded"
+          />
+          <input
+            type="email"
+            placeholder="Work email"
+            className="w-full p-2 border rounded"
+          />
+          <div className="flex items-center border rounded">
+            <select className="p-2 bg-transparent">
+              <option>US</option>
+              {/* Add more country options */}
+            </select>
+            <input
+              type="tel"
+              placeholder="+254 701 234 567"
+              className="flex-grow p-2"
+            />
+          </div>
+          
+          <div>
+            <p className="font-semibold mb-2">Number of employees</p>
+            <div className="space-y-2">
+              <label className="flex items-center">
+                <input type="radio" name="employees" className="mr-2" />
+                I'm a sole creator
+              </label>
+              <label className="flex items-center">
+                <input type="radio" name="employees" className="mr-2" />
+                I'm part of a team
+              </label>
+            </div>
+          </div>
+          
+          <button className="w-full bg-blue-600 text-white py-2 rounded">
+            Get in touch
+          </button>
+        </form>
+      </div>
+      
+      {/* Right side - Image and testimonial */}
+      <div className="w-full md:w-1/2 bg-gray-100 p-8 flex items-center">
+        <div>
+          <div className="relative mb-4">
+            <img
+              src="/public/callimg.jpg"
+              alt="Testimonial"
+              className="w-full rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black opacity-20"></div>
+          </div>
+          <p className="text-lg mb-4">
+            Ledja's software helps us manage cash flow, financial reporting and payroll with ease. It's a great solution for startups looking for an efficient way to manage their finances all-in-one.
+          </p>
+          <p className="font-semibold">Maya Rothwell</p>
+          <p className="text-sm text-gray-600">Founder & CEO</p>
+          <div className="flex items-center mt-2">
+            <Phone className="h-4 w-4 mr-2" />
+            <span className="text-sm">Open Ventures</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
